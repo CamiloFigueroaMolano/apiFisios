@@ -1,0 +1,39 @@
+{%extends './layout.html' %}
+{% block title %} HOME {% endblock %}
+{% block body %}
+<div class="container" method="get">
+    <div class="card border-primary mb-3">
+        <div class="card-header title text-center fw-bolder bg-primary text-white">
+            NUESTROS ALIADOS
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table id="table_id" class="display table table-bordered" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th  class="sub-title text-center fw-bolder bg-primary text-white">EMPRESA</th>
+                            <th  class="sub-title text-center fw-bolder bg-primary text-white">ACCESO</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in val%}
+                            <tr>
+                                <td class=" align-items-start"> {{item["empresa"]}} </td>
+                                <td >
+                                    <form class= "col-md-12" action="{{item['link']}}">
+                                        <button type="submit" class="btn btn-warning">Ver mas</button>
+                                    </form>
+                                
+                            </tr>
+                        {%endfor %}
+                    </tbody>
+
+                </table>
+            </div>    
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

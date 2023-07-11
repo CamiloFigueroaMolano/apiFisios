@@ -1,0 +1,157 @@
+{% extends './horizontal/layout.html' %}
+{% block title %} Información {% endblock %}
+{% block body %}
+
+
+    <container class="g-3 row" method="get">
+        {% for item in val%}
+
+        <!--#persona quien registra-->
+        <div class="col-md-4">
+            <label for="Persona_quien_registra" class="form-label label1">Persona quien registra</label>
+            <div class="">
+            {{item[2]}} <br>
+            </div><br>
+        </div><br>
+
+        <!--tipo de documento-->
+        <div class="col-md-4">
+            <label for="tipo_documento" class="form-label label1">Tipo de documento</label>
+                <div class="">
+                    {{item[3]}}
+                </div>
+        </div>
+
+            <!--#Numero de documento-->
+            <div class="col-md-4">
+                <label for="numero_documento" class="form-label label1">Numero de documento</label>
+                <div class="">
+                    {{item[4]}}
+                </div>
+            </div>
+
+            <!--Nombres-->
+            <div class="col-md-4">
+                <label for="nombre" class="form-label label1">Nombres</label>
+                <div class="">
+                    {{item[5]}}
+                </div>
+            </div>
+
+            <!--Apellidos-->
+            <div class="col-md-4">
+                <label for="Apellido" class="form-label label1">Apellidos</label>
+                <div class="">
+                    {{item[6]}}
+                </div>
+            </div>
+
+
+        <!--tipo examen-->
+        <div class="col-md-4">
+            <label for="Cargo" class="form-label label1">Tipo de examen</label>
+            <div class="">
+                {{item[7]}}
+            </div>
+        </div>
+
+        <!--cargo-->
+        <div class="col-md-4">
+            <label for="Cargo" class="form-label label1" >Cargo</label>
+            <div class="">
+                {{item[8]}}
+            </div>
+        </div>
+
+
+        <!--Direccion-->
+        <div class="col-md-4">
+            <label for="direccion" class="form-label label1">Direccion</label>
+            <div class="">
+                {{item[9]}}
+            </div>
+        </div>
+
+        <!--Correo-->
+        <div class="col-md-4">
+            <label for="correo" class="form-label label1">Correo</label>
+            <div class="">
+                {{item[10]}}
+            </div>
+        </div>
+
+        <!--#Numero celular-->
+        <div class="col-md-4">
+            <label for="celular" class="form-label label1">Numero de Celular</label>
+            <div class="">
+                {{item[11]}}
+            </div>
+        </div>
+
+
+        <!--# Numero telefono-->
+        <div class="col-md-4">
+            <label for="telefono" class="form-label label1">Numero de Telefono Fijo</label>
+            <div class="">
+                {{item[12]}}
+            </div>
+        </div>
+
+        <!--genero-->
+        <div class="col-md-4">
+        <label for="genero" class="form-label label1">Genero</label>
+            <div class="">
+                {{item[13]}}
+            </div>
+        </div>
+
+        <!--# RH-->
+        <div class="col-md-4">
+            <label for="RH" class="form-label label1">RH</label>
+                <div class="">
+                    {{item[14]}}
+                </div>
+        </div>
+
+        <!--#Fecha de nacimiento-->
+        <div class="col-md-4">
+            <label for="fecha_nacimiento" class="form-label label1">Fecha de Nacimiento</label>
+                <div class="">
+                    {{item[15]}}
+                </div>
+        </div>
+
+        <!--#Pais de nacimiento-->
+        <div class="col-md-4">
+            <label for="pais_nacimiento" class="form-label label1">Pais de Nacimiento</label>
+                <div class="">
+                    {{item[16]}}
+                </div>
+        </div>
+
+        <!--#Ciudad de nacimiento-->
+        <div class="col-md-4">
+            <label for="ciudad_nacimiento" class="form-label label1">Ciudad de Nacimiento</label>
+                <div class="ciudad_nacimiento">
+                    {{item[17]}}
+                </div>
+        </div>
+
+        <!--ESTADO-->
+        <div class="row col-md-4">
+            <label class="form-label label1">Estado</label>
+                <div class="exam">
+                    {{item[18]}}
+                </div>
+                    <a class="btn btn-primary mt-3" id="boton1" href="/servicio-de-vigilancia-horizontal-ltda-s1821/stade/{{item[0]}}">Cambiar estado</a>
+        </div>
+
+        {% endfor %}
+        <div class="row justify-content-center allign-items-center">
+            <div class="col-md-3 mt-3">
+                <a class="btn btn-primary" id="boton1" href="{{url_for('servihorizon_listarl')}}">Volver</a>
+            </div>
+        </div>
+    </container>
+
+{% endblock %}

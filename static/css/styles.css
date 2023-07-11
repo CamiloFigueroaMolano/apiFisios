@@ -1,0 +1,31 @@
+th,td{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.contenedor-made-by {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+.contenedor-made-by img {
+    width: 12%;
+    text-align: center;
+
+}
+
+.label1{
+    font-weight: bolder;
+}
+
+#boton1{
+    color: white;
+    background: #1e73be;
+}
