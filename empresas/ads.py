@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
-KEY = 'key.json'
+KEY = './static/key/key.json'
 
 SPREADSHEET_ID = '1qPCC9ZkAzca-YiTt52rQBWYRrRWARC-cuRPmWBEOekc'
 
