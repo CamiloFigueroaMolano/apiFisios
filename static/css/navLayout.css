@@ -35,6 +35,32 @@ nav a {
     height: 3em;
     width: 3em;
 
-
-
 }
+
+/* Estilos para pantallas pequeñas (por ejemplo, ancho máximo de 768px) */
+@media (max-width: 768px) {
+    nav .toggle-btn {
+      display: block; /* Mostrar el botón toggle en pantallas pequeñas */
+    }
+  
+    nav .menu {
+      flex-direction: column;
+      position: absolute;
+      top: 6rem;
+      left: 0;
+      width: 100%;
+      background-color: #1E73BE;
+      display: none; /* Ocultar el menú desplegable en pantallas pequeñas */
+      
+      /* Ajustar el z-index para asegurar que el menú esté por encima de otros elementos */
+      z-index: 1000;
+    }
+  
+    /* ... Estilos adicionales para el menú desplegable ... */
+  
+    /* Agregamos la clase 'show' para mostrar el menú desplegable cuando está activo */
+    nav .menu.show {
+      display: flex;
+    }
+  }
+  
