@@ -1,5 +1,4 @@
 from data.link import datalink
-from empresas.lira import Lira
 from empresas.ads import ads
 
 empresas = {}

@@ -121,4 +121,4 @@ class ads:
         update_values = {'values': values}
         update_result = sheet.values().update(spreadsheetId=SPREADSHEET_ID, range=self.page+'!A:XDF',
                                                 valueInputOption='USER_ENTERED', body=update_values).execute()
-        return redirect(url_for('ads_listarl'))
+        return redirect(request.referrer) 
