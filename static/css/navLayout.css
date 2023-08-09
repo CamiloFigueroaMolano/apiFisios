@@ -39,28 +39,43 @@ nav a {
 
 /* Estilos para pantallas pequeñas (por ejemplo, ancho máximo de 768px) */
 @media (max-width: 768px) {
-    nav .toggle-btn {
+  nav .toggle-btn {
       display: block; /* Mostrar el botón toggle en pantallas pequeñas */
-    }
-  
-    nav .menu {
-      flex-direction: column;
-      position: absolute;
-      top: 6rem;
+  }
+
+  nav .navbar-collapse {
+      /* Asegurarse de que el menú colapsado tenga un fondo y un z-index */
+      background-color: #1E73BE;
+      z-index: 1000;
+      position: absolute; /* Agregar position: absolute */
+      top: 6rem; /* Ajustar la posición superior para evitar superposiciones */
       left: 0;
       width: 100%;
-      background-color: #1E73BE;
-      display: none; /* Ocultar el menú desplegable en pantallas pequeñas */
-      
-      /* Ajustar el z-index para asegurar que el menú esté por encima de otros elementos */
-      z-index: 1000;
-    }
-  
-    /* ... Estilos adicionales para el menú desplegable ... */
-  
-    /* Agregamos la clase 'show' para mostrar el menú desplegable cuando está activo */
-    nav .menu.show {
-      display: flex;
-    }
+      display: none; /* Ocultar el menú desplegable por defecto */
   }
-  
+
+  /* Agregar la clase 'show' para mostrar el menú desplegable cuando está activo */
+  nav .navbar-collapse.show {
+      display: block; /* Cambiar a display:block para mostrar el menú */
+  }
+
+  /* ... Otros estilos para el menú desplegable ... */
+}
+
+@media (max-width: 468px) {
+    /* ... Estilos existentes ... */
+
+    /* Ocultar el título h3 en pantallas pequeñas */
+    nav h3 {
+        display: none;
+    }
+
+    nav h1 {
+        display: none;
+    }
+    
+    /* Ajustar los márgenes para la alineación del botón de toggle */
+    nav .navbar-toggler {
+        margin-left: 5px;
+    }
+}
