@@ -38,7 +38,7 @@ nav a {
 }
 
 /* Estilos para pantallas pequeñas (por ejemplo, ancho máximo de 768px) */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   nav .toggle-btn {
       display: block; /* Mostrar el botón toggle en pantallas pequeñas */
   }
@@ -62,7 +62,7 @@ nav a {
   /* ... Otros estilos para el menú desplegable ... */
 }
 
-@media (max-width: 468px) {
+@media (max-width: 891px) {
     /* ... Estilos existentes ... */
 
     /* Ocultar el título h3 en pantallas pequeñas */
