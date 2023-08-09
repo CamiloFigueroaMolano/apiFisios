@@ -70,14 +70,20 @@ class ads:
         var10 = request.form['pais_nacimiento']
         var11 = request.form['ciudad_nacimiento']
 
-        # Verificar campos vacíos
-        if any(value.strip() == '' for value in
-                [var15, var1, var2, var3, var12, var16, var4, var5, var6, var7, var14, var8, var9, var10, var11]):
-            error_message = "Por favor, complete todos los campos."
-            return render_template(self.template+"/create.html", error_message=error_message,
-                                    var0=var0, var15=var15, var1=var1, var2=var2, var3=var3, var12=var12,
-                                    var13=var13, var16=var16, var4=var4, var5=var5, var6=var6, var7=var7,
-                                    var14=var14, var8=var8, var9=var9, var10=var10, var11=var11)
+           # Lista de campos obligatorios (nombres de los campos)
+        required_fields = ['Persona_quien_registra', 'tipo_documento', 'numero_documento', 'nombre', 'Apellido', 'Cargo', 'celular']
+        
+        # Verificar que los campos obligatorios estén llenos
+        for field_name in required_fields:
+            if request.form.get(field_name, '').strip() == '':
+                error_message = f"El campo '{field_name}' es obligatorio."
+                return render_template(self.template + "/create.html", error_message=error_message)
+        
+        # Verificar que al menos un tipo de examen esté seleccionado
+        selected_exams = request.form.getlist('Tipo_examen[]')
+        if not selected_exams:
+            error_message = "Debe seleccionar al menos un tipo de examen."
+            return render_template(self.template + "/create.html", error_message=error_message)
 
         result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range=self.page+'!A:XFD').execute()
         values = result.get('values', [])
