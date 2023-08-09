@@ -11,8 +11,8 @@ for key, values in datalink.items():
 
     if key == 'empresa2':
         compani = ads(page, template)
-  
-    
+
+
     empresas[key] = {
         'page': page,
         'rout': link,

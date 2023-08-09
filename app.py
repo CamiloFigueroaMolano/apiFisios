@@ -5,9 +5,9 @@ import os
 
 app = Flask(__name__)
 
-#inicio
-@app.route("/")
-def inicio():
+#Fisios #Fisios #Fisios #Fisios #Fisios #Fisios #Fisios #Fisios #Fisios #Fisios #Fisios #Fisios #Fisios #Fisios #Fisios #Fisios #Fisios
+@app.route("/fisios-2946")
+def fisios():
     for i in datalink:
         return render_template("inicio.html",val=datalink.values())
 
@@ -31,11 +31,6 @@ def ltda_listar_cre1():
 def ltda_listar_cre2():
     return compani1.create2l()
 
-@app.route(rout1+"stade/<int:id>")
-def ltda_stade(id):
-    return compani1.inactive(id)
-
-
 #ADMEJORES SEGURIDAD LTDA   #ADMEJORES SEGURIDAD LTDA   #ADMEJORES SEGURIDAD LTDA   #ADMEJORES SEGURIDAD LTDA   #ADMEJORES SEGURIDAD LTDA
 
 rout2 = empresas['empresa2']['rout']
@@ -57,11 +52,7 @@ def ads_listar_cre1():
 def ads_listar_cre2():
     return compani2.create2l()
 
-@app.route(rout2+"stade/<int:id>")
-def ads_stade(id):
-    return compani2.inactive(id)
-
-#ALPHA SEGURIDAD PRIVADA LTDA #ALPHA SEGURIDAD PRIVADA LTDA #ALPHA SEGURIDAD PRIVADA LTDA  #ALPHA SEGURIDAD PRIVADA LTDA #ALPHA SEGURIDAD PRIVADA LTDA 
+#ALPHA SEGURIDAD PRIVADA LTDA #ALPHA SEGURIDAD PRIVADA LTDA #ALPHA SEGURIDAD PRIVADA LTDA  #ALPHA SEGURIDAD PRIVADA LTDA #ALPHA SEGURIDAD PRIVADA LTDA
 
 rout3 = empresas['empresa3']['rout']
 compani3 = empresas['empresa3']['compani']
@@ -82,12 +73,7 @@ def asp_listar_cre1():
 def asp_listar_cre2():
     return compani3.create2l()
 
-@app.route(rout3+"stade/<int:id>")
-def asp_stade(id):
-    return compani3.inactive(id)
-
-
-#AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA  #AMCOVIT LTDA#AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA 
+#AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA  #AMCOVIT LTDA#AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA #AMCOVIT LTDA
 
 rout4 = empresas['empresa4']['rout']
 compani4 = empresas['empresa4']['compani']
@@ -108,13 +94,7 @@ def amcovit_listar_cre1():
 def amcovit_listar_cre2():
     return compani4.create2l()
 
-@app.route(rout4+"stade/<int:id>")
-def amcovit_stade(id):
-    return compani4.inactive(id)
-
-
-
-#ANILLOS DE SEGURIDAD LTDA #ANILLOS DE SEGURIDAD LTDA #ANILLOS DE SEGURIDAD LTDA #ANILLOS DE SEGURIDAD LTDA #ANILLOS DE SEGURIDAD LTDA #ANILLOS DE SEGURIDAD LTDA 
+#ANILLOS DE SEGURIDAD LTDA #ANILLOS DE SEGURIDAD LTDA #ANILLOS DE SEGURIDAD LTDA #ANILLOS DE SEGURIDAD LTDA #ANILLOS DE SEGURIDAD LTDA #ANILLOS DE SEGURIDAD LTDA
 
 rout5 = empresas['empresa5']['rout']
 compani5 = empresas['empresa5']['compani']
@@ -135,13 +115,7 @@ def anis_listar_cre1():
 def anis_listar_cre2():
     return compani5.create2l()
 
-@app.route(rout5+"stade/<int:id>")
-def anis_stade(id):
-    return compani5.inactive(id)
-
-
-
-#ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA#ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA 
+#ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA#ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA #ASEISA LTDA
 
 rout6 = empresas['empresa6']['rout']
 compani6 = empresas['empresa6']['compani']
@@ -162,13 +136,7 @@ def aseisa_listar_cre1():
 def aseisa_listar_cre2():
     return compani6.create2l()
 
-@app.route(rout6+"stade/<int:id>")
-def aseisa_stade(id):
-    return compani6.inactive(id)
-
-
-
-#ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA#ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA 
+#ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA#ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA #ASEP LTDA
 
 rout7 = empresas['empresa7']['rout']
 compani7 = empresas['empresa7']['compani']
@@ -189,13 +157,7 @@ def asep_listar_cre1():
 def asep_listar_cre2():
     return compani7.create2l()
 
-@app.route(rout7+"stade/<int:id>")
-def asep_stade(id):
-    return compani7.inactive(id)
-
-
-
-#ATLANTA CIA DE VIGILANCIA PRIVADA LTDA #ATLANTA CIA DE VIGILANCIA PRIVADA LTDA #ATLANTA CIA DE VIGILANCIA PRIVADA LTDA #ATLANTA CIA DE VIGILANCIA PRIVADA LTDA #ATLANTA CIA DE VIGILANCIA PRIVADA LTDA 
+#ATLANTA CIA DE VIGILANCIA PRIVADA LTDA #ATLANTA CIA DE VIGILANCIA PRIVADA LTDA #ATLANTA CIA DE VIGILANCIA PRIVADA LTDA #ATLANTA CIA DE VIGILANCIA PRIVADA LTDA #ATLANTA CIA DE VIGILANCIA PRIVADA LTDA
 
 rout8 = empresas['empresa8']['rout']
 compani8 = empresas['empresa8']['compani']
@@ -216,13 +178,7 @@ def atlacia_listar_cre1():
 def atlacia_listar_cre2():
     return compani8.create2l()
 
-@app.route(rout8+"stade/<int:id>")
-def atlacia_stade(id):
-    return compani8.inactive(id)
-
-
-
-#ATMOSFERA DE SEGURIDAD LTDA #ATMOSFERA DE SEGURIDAD LTDA #ATMOSFERA DE SEGURIDAD LTDA #ATMOSFERA DE SEGURIDAD LTDA #ATMOSFERA DE SEGURIDAD LTDA 
+#ATMOSFERA DE SEGURIDAD LTDA #ATMOSFERA DE SEGURIDAD LTDA #ATMOSFERA DE SEGURIDAD LTDA #ATMOSFERA DE SEGURIDAD LTDA #ATMOSFERA DE SEGURIDAD LTDA
 
 rout9 = empresas['empresa9']['rout']
 compani9 = empresas['empresa9']['compani']
@@ -243,13 +199,8 @@ def atmoseg_listar_cre1():
 def atmoseg_listar_cre2():
     return compani9.create2l()
 
-@app.route(rout9+"stade/<int:id>")
-def atmoseg_stade(id):
-    return compani9.inactive(id)
 
-
-
-#BOGOTANA DE SEGURIDAD LTDA #BOGOTANA DE SEGURIDAD LTDA #BOGOTANA DE SEGURIDAD LTDA #BOGOTANA DE SEGURIDAD LTDA #BOGOTANA DE SEGURIDAD LTDA 
+#BOGOTANA DE SEGURIDAD LTDA #BOGOTANA DE SEGURIDAD LTDA #BOGOTANA DE SEGURIDAD LTDA #BOGOTANA DE SEGURIDAD LTDA #BOGOTANA DE SEGURIDAD LTDA
 
 rout10 = empresas['empresa10']['rout']
 compani10 = empresas['empresa10']['compani']
@@ -270,13 +221,8 @@ def bogseg_listar_cre1():
 def bogseg_listar_cre2():
     return compani10.create2l()
 
-@app.route(rout10+"stade/<int:id>")
-def bogseg_stade(id):
-    return compani10.inactive(id)
 
-
-
-#BRINKS DE COLOMBIA S.A. #BRINKS DE COLOMBIA S.A. #BRINKS DE COLOMBIA S.A. #BRINKS DE COLOMBIA S.A. #BRINKS DE COLOMBIA S.A. 
+#BRINKS DE COLOMBIA S.A. #BRINKS DE COLOMBIA S.A. #BRINKS DE COLOMBIA S.A. #BRINKS DE COLOMBIA S.A. #BRINKS DE COLOMBIA S.A.
 
 rout11 = empresas['empresa11']['rout']
 compani11 = empresas['empresa11']['compani']
@@ -297,13 +243,7 @@ def brinks_listar_cre1():
 def brinks_listar_cre2():
     return compani11.create2l()
 
-@app.route(rout11+"stade/<int:id>")
-def brinks_stade(id):
-    return compani11.inactive(id)
-
-
-
-#CLASICA DE SEGURIDAD LIMITADA #CLASICA DE SEGURIDAD LIMITADA #CLASICA DE SEGURIDAD LIMITADA #CLASICA DE SEGURIDAD LIMITADA #CLASICA DE SEGURIDAD LIMITADA 
+#CLASICA DE SEGURIDAD LIMITADA #CLASICA DE SEGURIDAD LIMITADA #CLASICA DE SEGURIDAD LIMITADA #CLASICA DE SEGURIDAD LIMITADA #CLASICA DE SEGURIDAD LIMITADA
 
 rout12 = empresas['empresa12']['rout']
 compani12 = empresas['empresa12']['compani']
@@ -324,13 +264,7 @@ def claseg_listar_cre1():
 def claseg_listar_cre2():
     return compani12.create2l()
 
-@app.route(rout12+"stade/<int:id>")
-def claseg_stade(id):
-    return compani12.inactive(id)
-
-
-
-#COMPANIA DE VIGILANCIA PPH LTDA #COMPANIA DE VIGILANCIA PPH LTDA #COMPANIA DE VIGILANCIA PPH LTDA #COMPANIA DE VIGILANCIA PPH LTDA #COMPANIA DE VIGILANCIA PPH LTDA 
+#COMPANIA DE VIGILANCIA PPH LTDA #COMPANIA DE VIGILANCIA PPH LTDA #COMPANIA DE VIGILANCIA PPH LTDA #COMPANIA DE VIGILANCIA PPH LTDA #COMPANIA DE VIGILANCIA PPH LTDA
 
 rout13 = empresas['empresa13']['rout']
 compani13 = empresas['empresa13']['compani']
@@ -351,13 +285,7 @@ def pph_listar_cre1():
 def pph_listar_cre2():
     return compani13.create2l()
 
-@app.route(rout13+"stade/<int:id>")
-def pph_stade(id):
-    return compani13.inactive(id)
-
-
-
-#COMPAÑIA COLOMBIANA DE SEGURIDAD TRANSBA #COMPAÑIA COLOMBIANA DE SEGURIDAD TRANSBA #COMPAÑIA COLOMBIANA DE SEGURIDAD TRANSBA #COMPAÑIA COLOMBIANA DE SEGURIDAD TRANSBA #COMPAÑIA COLOMBIANA DE SEGURIDAD TRANSBA 
+#COMPAÑIA COLOMBIANA DE SEGURIDAD TRANSBA #COMPAÑIA COLOMBIANA DE SEGURIDAD TRANSBA #COMPAÑIA COLOMBIANA DE SEGURIDAD TRANSBA #COMPAÑIA COLOMBIANA DE SEGURIDAD TRANSBA #COMPAÑIA COLOMBIANA DE SEGURIDAD TRANSBA
 
 rout14 = empresas['empresa14']['rout']
 compani14 = empresas['empresa14']['compani']
@@ -378,13 +306,7 @@ def ccst_listar_cre1():
 def ccst_listar_cre2():
     return compani14.create2l()
 
-@app.route(rout14+"stade/<int:id>")
-def ccst_stade(id):
-    return compani14.inactive(id)
-
-
-
-#COMPAÑIA DE SEGURIDAD Y VIGILANCIA PRIVA #COMPAÑIA DE SEGURIDAD Y VIGILANCIA PRIVA #COMPAÑIA DE SEGURIDAD Y VIGILANCIA PRIVA #COMPAÑIA DE SEGURIDAD Y VIGILANCIA PRIVA #COMPAÑIA DE SEGURIDAD Y VIGILANCIA PRIVA 
+#COMPAÑIA DE SEGURIDAD Y VIGILANCIA PRIVA #COMPAÑIA DE SEGURIDAD Y VIGILANCIA PRIVA #COMPAÑIA DE SEGURIDAD Y VIGILANCIA PRIVA #COMPAÑIA DE SEGURIDAD Y VIGILANCIA PRIVA #COMPAÑIA DE SEGURIDAD Y VIGILANCIA PRIVA
 
 rout15 = empresas['empresa15']['rout']
 compani15 = empresas['empresa15']['compani']
@@ -405,13 +327,7 @@ def csvp_listar_cre1():
 def csvp_listar_cre2():
     return compani15.create2l()
 
-@app.route(rout15+"stade/<int:id>")
-def csvp_stade(id):
-    return compani15.inactive(id)
-
-
-
-#CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA 
+#CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA #CONFIAR SEGURIDAD LTDA
 
 rout16 = empresas['empresa16']['rout']
 compani16 = empresas['empresa16']['compani']
@@ -432,13 +348,7 @@ def confiar_listar_cre1():
 def confiar_listar_cre2():
     return compani16.create2l()
 
-@app.route(rout16+"stade/<int:id>")
-def confiar_stade(id):
-    return compani16.inactive(id)
-
-
-
-#CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA#CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA 
+#CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA#CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA #CONTROLAR LTDA
 
 rout17 = empresas['empresa17']['rout']
 compani17 = empresas['empresa17']['compani']
@@ -459,13 +369,7 @@ def controlar_listar_cre1():
 def controlar_listar_cre2():
     return compani17.create2l()
 
-@app.route(rout17+"stade/<int:id>")
-def controlar_stade(id):
-    return compani17.inactive(id)
-
-
-
-#COOPERATIVA DE TRABAJO ASOCIADO DE VIGILANCIA SOCIAL COOVISOCIAL #COOPERATIVA DE TRABAJO ASOCIADO DE VIGILANCIA SOCIAL COOVISOCIAL #COOPERATIVA DE TRABAJO ASOCIADO DE VIGILANCIA SOCIAL COOVISOCIAL #COOPERATIVA DE TRABAJO ASOCIADO DE VIGILANCIA SOCIAL COOVISOCIAL #COOPERATIVA DE TRABAJO ASOCIADO DE VIGILANCIA SOCIAL COOVISOCIAL 
+#COOPERATIVA DE TRABAJO ASOCIADO DE VIGILANCIA SOCIAL COOVISOCIAL #COOPERATIVA DE TRABAJO ASOCIADO DE VIGILANCIA SOCIAL COOVISOCIAL #COOPERATIVA DE TRABAJO ASOCIADO DE VIGILANCIA SOCIAL COOVISOCIAL #COOPERATIVA DE TRABAJO ASOCIADO DE VIGILANCIA SOCIAL COOVISOCIAL #COOPERATIVA DE TRABAJO ASOCIADO DE VIGILANCIA SOCIAL COOVISOCIAL
 
 rout18 = empresas['empresa18']['rout']
 compani18 = empresas['empresa18']['compani']
@@ -486,13 +390,7 @@ def cooptra_listar_cre1():
 def cooptra_listar_cre2():
     return compani18.create2l()
 
-@app.route(rout18+"stade/<int:id>")
-def cooptra_stade(id):
-    return compani18.inactive(id)
-
-
-
-#COOPERATIVA DE TRABAJO ASOCIADO PARA L #COOPERATIVA DE TRABAJO ASOCIADO PARA L #COOPERATIVA DE TRABAJO ASOCIADO PARA L #COOPERATIVA DE TRABAJO ASOCIADO PARA L #COOPERATIVA DE TRABAJO ASOCIADO PARA L 
+#COOPERATIVA DE TRABAJO ASOCIADO PARA L #COOPERATIVA DE TRABAJO ASOCIADO PARA L #COOPERATIVA DE TRABAJO ASOCIADO PARA L #COOPERATIVA DE TRABAJO ASOCIADO PARA L #COOPERATIVA DE TRABAJO ASOCIADO PARA L
 
 rout19 = empresas['empresa19']['rout']
 compani19 = empresas['empresa19']['compani']
@@ -513,11 +411,7 @@ def coopl_listar_cre1():
 def coopl_listar_cre2():
     return compani19.create2l()
 
-@app.route(rout19+"stade/<int:id>")
-def coopl_stade(id):
-    return compani19.inactive(id)
-
-#COOVIPORFAC C.T.A#COOVIPORFAC C.T.A #COOVIPORFAC C.T.A #COOVIPORFAC C.T.A #COOVIPORFAC C.T.A #COOVIPORFAC C.T.A #COOVIPORFAC C.T.A #COOVIPORFAC C.T.A #COOVIPORFAC C.T.A 
+#COOVIPORFAC C.T.A#COOVIPORFAC C.T.A #COOVIPORFAC C.T.A #COOVIPORFAC C.T.A #COOVIPORFAC C.T.A #COOVIPORFAC C.T.A #COOVIPORFAC C.T.A #COOVIPORFAC C.T.A #COOVIPORFAC C.T.A
 
 rout20 = empresas['empresa20']['rout']
 compani20 = empresas['empresa20']['compani']
@@ -538,12 +432,7 @@ def coovi_listar_cre1():
 def coovi_listar_cre2():
     return compani20.create2l()
 
-@app.route(rout20+"stade/<int:id>")
-def coovi_stade(id):
-    return compani20.inactive(id)
-
-
-#COSERVICREA LTDA-COMPANIA DE SERVICIOS D #COSERVICREA LTDA-COMPANIA DE SERVICIOS D #COSERVICREA LTDA-COMPANIA DE SERVICIOS D #COSERVICREA LTDA-COMPANIA DE SERVICIOS D #COSERVICREA LTDA-COMPANIA DE SERVICIOS D 
+#COSERVICREA LTDA-COMPANIA DE SERVICIOS D #COSERVICREA LTDA-COMPANIA DE SERVICIOS D #COSERVICREA LTDA-COMPANIA DE SERVICIOS D #COSERVICREA LTDA-COMPANIA DE SERVICIOS D #COSERVICREA LTDA-COMPANIA DE SERVICIOS D
 
 rout21 = empresas['empresa21']['rout']
 compani21 = empresas['empresa21']['compani']
@@ -564,13 +453,7 @@ def coservi_listar_cre1():
 def coservi_listar_cre2():
     return compani21.create2l()
 
-@app.route(rout21+"stade/<int:id>")
-def coservi_stade(id):
-    return compani21.inactive(id)
-
-
-
-#COSERVIPP LTDA #COSERVIPP LTDA #COSERVIPP LTDA #COSERVIPP LTDA #COSERVIPP LTDA  #COSERVIPP LTDA #COSERVIPP LTDA #COSERVIPP LTDA #COSERVIPP LTDA #COSERVIPP LTDA 
+#COSERVIPP LTDA #COSERVIPP LTDA #COSERVIPP LTDA #COSERVIPP LTDA #COSERVIPP LTDA  #COSERVIPP LTDA #COSERVIPP LTDA #COSERVIPP LTDA #COSERVIPP LTDA #COSERVIPP LTDA
 
 rout22 = empresas['empresa22']['rout']
 compani22 = empresas['empresa22']['compani']
@@ -591,13 +474,8 @@ def cospp_listar_cre1():
 def cospp_listar_cre2():
     return compani22.create2l()
 
-@app.route(rout22+"stade/<int:id>")
-def cospp_stade(id):
-    return compani22.inactive(id)
 
-
-
-#COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA#COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA 
+#COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA#COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA #COSMOVIG LTDA
 
 rout23 = empresas['empresa23']['rout']
 compani23 = empresas['empresa23']['compani']
@@ -618,13 +496,8 @@ def cosmovig_listar_cre1():
 def cosmovig_listar_cre2():
     return compani23.create2l()
 
-@app.route(rout23+"stade/<int:id>")
-def cosmovig_stade(id):
-    return compani23.inactive(id)
 
-
-
-#CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA#CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA 
+#CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA#CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA #CUIDAR LIMITADA
 
 rout24 = empresas['empresa24']['rout']
 compani24 = empresas['empresa24']['compani']
@@ -645,13 +518,7 @@ def cuidar_listar_cre1():
 def cuidar_listar_cre2():
     return compani24.create2l()
 
-@app.route(rout24+"stade/<int:id>")
-def cuidar_stade(id):
-    return compani24.inactive(id)
-
-
-
-#DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA#DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA 
+#DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA#DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA #DEAS LTDA
 
 rout25 = empresas['empresa25']['rout']
 compani25 = empresas['empresa25']['compani']
@@ -672,13 +539,8 @@ def deas_listar_cre1():
 def deas_listar_cre2():
     return compani25.create2l()
 
-@app.route(rout25+"stade/<int:id>")
-def deas_stade(id):
-    return compani25.inactive(id)
 
-
-
-#EFECTIVE SEGURITY JR LTDA #EFECTIVE SEGURITY JR LTDA #EFECTIVE SEGURITY JR LTDA #EFECTIVE SEGURITY JR LTDA #EFECTIVE SEGURITY JR LTDA 
+#EFECTIVE SEGURITY JR LTDA #EFECTIVE SEGURITY JR LTDA #EFECTIVE SEGURITY JR LTDA #EFECTIVE SEGURITY JR LTDA #EFECTIVE SEGURITY JR LTDA
 
 rout26 = empresas['empresa26']['rout']
 compani26 = empresas['empresa26']['compani']
@@ -699,13 +561,8 @@ def efective_listar_cre1():
 def efective_listar_cre2():
     return compani26.create2l()
 
-@app.route(rout26+"stade/<int:id>")
-def efective_stade(id):
-    return compani26.inactive(id)
 
-
-
-#ELECTROEQUIPOS COLOMBIA S.A.S. #ELECTROEQUIPOS COLOMBIA S.A.S. #ELECTROEQUIPOS COLOMBIA S.A.S. #ELECTROEQUIPOS COLOMBIA S.A.S. #ELECTROEQUIPOS COLOMBIA S.A.S. 
+#ELECTROEQUIPOS COLOMBIA S.A.S. #ELECTROEQUIPOS COLOMBIA S.A.S. #ELECTROEQUIPOS COLOMBIA S.A.S. #ELECTROEQUIPOS COLOMBIA S.A.S. #ELECTROEQUIPOS COLOMBIA S.A.S.
 
 rout27 = empresas['empresa27']['rout']
 compani27 = empresas['empresa27']['compani']
@@ -726,13 +583,7 @@ def electro_listar_cre1():
 def electro_listar_cre2():
     return compani27.create2l()
 
-@app.route(rout27+"stade/<int:id>")
-def electro_stade(id):
-    return compani27.inactive(id)
-
-
-
-#EXTRA SEGURIDAD LIMITADA #EXTRA SEGURIDAD LIMITADA #EXTRA SEGURIDAD LIMITADA #EXTRA SEGURIDAD LIMITADA #EXTRA SEGURIDAD LIMITADA 
+#EXTRA SEGURIDAD LIMITADA #EXTRA SEGURIDAD LIMITADA #EXTRA SEGURIDAD LIMITADA #EXTRA SEGURIDAD LIMITADA #EXTRA SEGURIDAD LIMITADA
 
 rout28 = empresas['empresa28']['rout']
 compani28 = empresas['empresa28']['compani']
@@ -753,12 +604,7 @@ def extra_listar_cre1():
 def extra_listar_cre2():
     return compani28.create2l()
 
-@app.route(rout28+"stade/<int:id>")
-def extra_stade(id):
-    return compani28.inactive(id)
-
-
-#FALCON FARMS DE COLOMBIA SA #FALCON FARMS DE COLOMBIA SA #FALCON FARMS DE COLOMBIA SA #FALCON FARMS DE COLOMBIA SA #FALCON FARMS DE COLOMBIA SA 
+#FALCON FARMS DE COLOMBIA SA #FALCON FARMS DE COLOMBIA SA #FALCON FARMS DE COLOMBIA SA #FALCON FARMS DE COLOMBIA SA #FALCON FARMS DE COLOMBIA SA
 
 rout29 = empresas['empresa29']['rout']
 compani29 = empresas['empresa29']['compani']
@@ -779,11 +625,7 @@ def falcon_listar_cre1():
 def falcon_listar_cre2():
     return compani29.create2l()
 
-@app.route(rout29+"stade/<int:id>")
-def falcon_stade(id):
-    return compani29.inactive(id)
-
-#FIDELITY SECURITY COMPANY LTDA #FIDELITY SECURITY COMPANY LTDA #FIDELITY SECURITY COMPANY LTDA #FIDELITY SECURITY COMPANY LTDA #FIDELITY SECURITY COMPANY LTDA 
+#FIDELITY SECURITY COMPANY LTDA #FIDELITY SECURITY COMPANY LTDA #FIDELITY SECURITY COMPANY LTDA #FIDELITY SECURITY COMPANY LTDA #FIDELITY SECURITY COMPANY LTDA
 
 rout30 = empresas['empresa30']['rout']
 compani30 = empresas['empresa30']['compani']
@@ -804,11 +646,7 @@ def fidelity_listar_cre1():
 def fidelity_listar_cre2():
     return compani30.create2l()
 
-@app.route(rout30+"stade/<int:id>")
-def fidelity_stade(id):
-    return compani30.inactive(id)
-
-#FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A#FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A 
+#FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A#FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A #FORTOX S A
 
 rout31 = empresas['empresa31']['rout']
 compani31 = empresas['empresa31']['compani']
@@ -829,13 +667,8 @@ def fortox_listar_cre1():
 def fortox_listar_cre2():
     return compani31.create2l()
 
-@app.route(rout31+"stade/<int:id>")
-def fortox_stade(id):
-    return compani31.inactive(id)
 
-
-
-#G4S SECURE SOLUTIONS COLOMBIA S. A #G4S SECURE SOLUTIONS COLOMBIA S. A #G4S SECURE SOLUTIONS COLOMBIA S. A #G4S SECURE SOLUTIONS COLOMBIA S. A #G4S SECURE SOLUTIONS COLOMBIA S. A 
+#G4S SECURE SOLUTIONS COLOMBIA S. A #G4S SECURE SOLUTIONS COLOMBIA S. A #G4S SECURE SOLUTIONS COLOMBIA S. A #G4S SECURE SOLUTIONS COLOMBIA S. A #G4S SECURE SOLUTIONS COLOMBIA S. A
 
 rout32 = empresas['empresa32']['rout']
 compani32 = empresas['empresa32']['compani']
@@ -856,13 +689,7 @@ def gsssol_listar_cre1():
 def gsssol_listar_cre2():
     return compani32.create2l()
 
-@app.route(rout32+"stade/<int:id>")
-def gsssol_stade(id):
-    return compani32.inactive(id)
-
-
-
-#GENDARMES DE SEGURIDAD LTDA #GENDARMES DE SEGURIDAD LTDA #GENDARMES DE SEGURIDAD LTDA #GENDARMES DE SEGURIDAD LTDA #GENDARMES DE SEGURIDAD LTDA 
+#GENDARMES DE SEGURIDAD LTDA #GENDARMES DE SEGURIDAD LTDA #GENDARMES DE SEGURIDAD LTDA #GENDARMES DE SEGURIDAD LTDA #GENDARMES DE SEGURIDAD LTDA
 
 rout33 = empresas['empresa33']['rout']
 compani33 = empresas['empresa33']['compani']
@@ -883,13 +710,7 @@ def gendar_listar_cre1():
 def gendar_listar_cre2():
     return compani33.create2l()
 
-@app.route(rout33+"stade/<int:id>")
-def gendar_stade(id):
-    return compani33.inactive(id)
-
-
-
-#HOLDING DE SEGURIDAD LTDA #HOLDING DE SEGURIDAD LTDA #HOLDING DE SEGURIDAD LTDA #HOLDING DE SEGURIDAD LTDA #HOLDING DE SEGURIDAD LTDA 
+#HOLDING DE SEGURIDAD LTDA #HOLDING DE SEGURIDAD LTDA #HOLDING DE SEGURIDAD LTDA #HOLDING DE SEGURIDAD LTDA #HOLDING DE SEGURIDAD LTDA
 
 rout34 = empresas['empresa34']['rout']
 compani34 = empresas['empresa34']['compani']
@@ -910,12 +731,7 @@ def holding_listar_cre1():
 def holding_listar_cre2():
     return compani34.create2l()
 
-@app.route(rout34+"stade/<int:id>")
-def holding_stade(id):
-    return compani34.inactive(id)
-
-
-#IMPROCAN SEGURIDAD LTDA #IMPROCAN SEGURIDAD LTDA #IMPROCAN SEGURIDAD LTDA #IMPROCAN SEGURIDAD LTDA #IMPROCAN SEGURIDAD LTDA 
+#IMPROCAN SEGURIDAD LTDA #IMPROCAN SEGURIDAD LTDA #IMPROCAN SEGURIDAD LTDA #IMPROCAN SEGURIDAD LTDA #IMPROCAN SEGURIDAD LTDA
 
 rout35 = empresas['empresa35']['rout']
 compani35 = empresas['empresa35']['compani']
@@ -936,12 +752,7 @@ def improcan_listar_cre1():
 def improcan_listar_cre2():
     return compani35.create2l()
 
-@app.route(rout35+"stade/<int:id>")
-def improcan_stade(id):
-    return compani35.inactive(id)
-
-
-#KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA#KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA 
+#KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA#KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA #KEY STELL SECURITY LTDA
 
 rout36 = empresas['empresa36']['rout']
 compani36 = empresas['empresa36']['compani']
@@ -962,11 +773,7 @@ def keystell_listar_cre1():
 def keystell_listar_cre2():
     return compani36.create2l()
 
-@app.route(rout36+"stade/<int:id>")
-def keystell_stade(id):
-    return compani36.inactive(id)
-
-#LATAMSEC SECURITY LTDA#LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA 
+#LATAMSEC SECURITY LTDA#LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA #LATAMSEC SECURITY LTDA
 
 rout37 = empresas['empresa37']['rout']
 compani37 = empresas['empresa37']['compani']
@@ -987,11 +794,8 @@ def latamsec_listar_cre1():
 def latamsec_listar_cre2():
     return compani37.create2l()
 
-@app.route(rout37+"stade/<int:id>")
-def latamsec_stade(id):
-    return compani37.inactive(id)
 
-# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA # LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# 
+# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA # LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA# LIRA#
 
 rout = empresas['empresa38']['rout']
 compani = empresas['empresa38']['compani']
@@ -1012,12 +816,8 @@ def lir_listar_cre1():
 def lir_listar_cre2():
     return compani.create2l()
 
-@app.route(rout+"stade/<int:id>")
-def lir_stade(id):
-    return compani.inactive(id)
 
-
-#MAGNUS SEGURIDAD LTDA #MAGNUS SEGURIDAD LTDA #MAGNUS SEGURIDAD LTDA #MAGNUS SEGURIDAD LTDA #MAGNUS SEGURIDAD LTDA #MAGNUS SEGURIDAD LTDA 
+#MAGNUS SEGURIDAD LTDA #MAGNUS SEGURIDAD LTDA #MAGNUS SEGURIDAD LTDA #MAGNUS SEGURIDAD LTDA #MAGNUS SEGURIDAD LTDA #MAGNUS SEGURIDAD LTDA
 
 rout39 = empresas['empresa39']['rout']
 compani39 = empresas['empresa39']['compani']
@@ -1038,11 +838,7 @@ def magnus_listar_cre1():
 def magnus_listar_cre2():
     return compani39.create2l()
 
-@app.route(rout39+"stade/<int:id>")
-def magnus_stade(id):
-    return compani39.inactive(id)
-
-#MASTIN SEGURIDAD LTDA #MASTIN SEGURIDAD LTDA #MASTIN SEGURIDAD LTDA #MASTIN SEGURIDAD LTDA #MASTIN SEGURIDAD LTDA #MASTIN SEGURIDAD LTDA 
+#MASTIN SEGURIDAD LTDA #MASTIN SEGURIDAD LTDA #MASTIN SEGURIDAD LTDA #MASTIN SEGURIDAD LTDA #MASTIN SEGURIDAD LTDA #MASTIN SEGURIDAD LTDA
 
 rout40 = empresas['empresa40']['rout']
 compani40 = empresas['empresa40']['compani']
@@ -1063,13 +859,7 @@ def mastin_listar_cre1():
 def mastin_listar_cre2():
     return compani40.create2l()
 
-@app.route(rout40+"stade/<int:id>")
-def mastin_stade(id):
-    return compani40.inactive(id)
-
-
-
-#MEGASEGURIDAD LTDA #MEGASEGURIDAD LTDA #MEGASEGURIDAD LTDA #MEGASEGURIDAD LTDA #MEGASEGURIDAD LTDA #MEGASEGURIDAD LTDA 
+#MEGASEGURIDAD LTDA #MEGASEGURIDAD LTDA #MEGASEGURIDAD LTDA #MEGASEGURIDAD LTDA #MEGASEGURIDAD LTDA #MEGASEGURIDAD LTDA
 
 rout41 = empresas['empresa41']['rout']
 compani41 = empresas['empresa41']['compani']
@@ -1090,12 +880,7 @@ def mseg_listar_cre1():
 def mseg_listar_cre2():
     return compani41.create2l()
 
-@app.route(rout41+"stade/<int:id>")
-def mseg_stade(id):
-    return compani41.inactive(id)
-
-
-#NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA 
+#NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA #NAPOLES LTDA
 
 rout42 = empresas['empresa42']['rout']
 compani42 = empresas['empresa42']['compani']
@@ -1116,12 +901,7 @@ def napoles_listar_cre1():
 def napoles_listar_cre2():
     return compani42.create2l()
 
-@app.route(rout42+"stade/<int:id>")
-def napoles_stade(id):
-    return compani42.inactive(id)
-
-
-#NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA 
+#NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA #NASER LTDA
 
 rout43 = empresas['empresa43']['rout']
 compani43 = empresas['empresa43']['compani']
@@ -1142,12 +922,8 @@ def naser_listar_cre1():
 def naser_listar_cre2():
     return compani43.create2l()
 
-@app.route(rout43+"stade/<int:id>")
-def naser_stade(id):
-    return compani43.inactive(id)
 
-
-#OPERADORES Y ADMINISTRADORES INTERNACIONALES DE VIAS S.A.S. #OPERADORES Y ADMINISTRADORES INTERNACIONALES DE VIAS S.A.S. #OPERADORES Y ADMINISTRADORES INTERNACIONALES DE VIAS S.A.S. #OPERADORES Y ADMINISTRADORES INTERNACIONALES DE VIAS S.A.S. #OPERADORES Y ADMINISTRADORES INTERNACIONALES DE VIAS S.A.S. #OPERADORES Y ADMINISTRADORES INTERNACIONALES DE VIAS S.A.S. 
+#OPERADORES Y ADMINISTRADORES INTERNACIONALES DE VIAS S.A.S. #OPERADORES Y ADMINISTRADORES INTERNACIONALES DE VIAS S.A.S. #OPERADORES Y ADMINISTRADORES INTERNACIONALES DE VIAS S.A.S. #OPERADORES Y ADMINISTRADORES INTERNACIONALES DE VIAS S.A.S. #OPERADORES Y ADMINISTRADORES INTERNACIONALES DE VIAS S.A.S. #OPERADORES Y ADMINISTRADORES INTERNACIONALES DE VIAS S.A.S.
 
 rout44 = empresas['empresa44']['rout']
 compani44 = empresas['empresa44']['compani']
@@ -1168,12 +944,7 @@ def opeadin_listar_cre1():
 def opeadin_listar_cre2():
     return compani44.create2l()
 
-@app.route(rout44+"stade/<int:id>")
-def opeadin_stade(id):
-    return compani44.inactive(id)
-
-
-#PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR 
+#PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR #PROSEGUR
 
 rout45 = empresas['empresa45']['rout']
 compani45 = empresas['empresa45']['compani']
@@ -1194,11 +965,7 @@ def proseguir_listar_cre1():
 def proseguir_listar_cre2():
     return compani45.create2l()
 
-@app.route(rout45+"stade/<int:id>")
-def proseguir_stade(id):
-    return compani45.inactive(id)
-
-#PROSEGUR VIGILANCIA Y SEGURIDAD PRIVADA #PROSEGUR VIGILANCIA Y SEGURIDAD PRIVADA #PROSEGUR VIGILANCIA Y SEGURIDAD PRIVADA #PROSEGUR VIGILANCIA Y SEGURIDAD PRIVADA #PROSEGUR VIGILANCIA Y SEGURIDAD PRIVADA #PROSEGUR VIGILANCIA Y SEGURIDAD PRIVADA 
+#PROSEGUR VIGILANCIA Y SEGURIDAD PRIVADA #PROSEGUR VIGILANCIA Y SEGURIDAD PRIVADA #PROSEGUR VIGILANCIA Y SEGURIDAD PRIVADA #PROSEGUR VIGILANCIA Y SEGURIDAD PRIVADA #PROSEGUR VIGILANCIA Y SEGURIDAD PRIVADA #PROSEGUR VIGILANCIA Y SEGURIDAD PRIVADA
 #############
 ###########
 #####
@@ -1224,12 +991,7 @@ def provigys_listar_cre1():
 def provigys_listar_cre2():
     return compani46.create2l()
 
-@app.route(rout46+"stade/<int:id>")
-def provigys_stade(id):
-    return compani46.inactive(id)
-
-
-#PROTECCION Y VIGILANCIA TURIN PROVITURIN #PROTECCION Y VIGILANCIA TURIN PROVITURIN #PROTECCION Y VIGILANCIA TURIN PROVITURIN #PROTECCION Y VIGILANCIA TURIN PROVITURIN #PROTECCION Y VIGILANCIA TURIN PROVITURIN #PROTECCION Y VIGILANCIA TURIN PROVITURIN 
+#PROTECCION Y VIGILANCIA TURIN PROVITURIN #PROTECCION Y VIGILANCIA TURIN PROVITURIN #PROTECCION Y VIGILANCIA TURIN PROVITURIN #PROTECCION Y VIGILANCIA TURIN PROVITURIN #PROTECCION Y VIGILANCIA TURIN PROVITURIN #PROTECCION Y VIGILANCIA TURIN PROVITURIN
 
 rout47 = empresas['empresa47']['rout']
 compani47 = empresas['empresa47']['compani']
@@ -1250,11 +1012,7 @@ def proyvigtu_listar_cre1():
 def proyvigtu_listar_cre2():
     return compani47.create2l()
 
-@app.route(rout47+"stade/<int:id>")
-def proyvigtu_stade(id):
-    return compani47.inactive(id)
-
-#RISK Y SOLUTIONS GROUP LTDA #RISK Y SOLUTIONS GROUP LTDA #RISK Y SOLUTIONS GROUP LTDA #RISK Y SOLUTIONS GROUP LTDA #RISK Y SOLUTIONS GROUP LTDA #RISK Y SOLUTIONS GROUP LTDA 
+#RISK Y SOLUTIONS GROUP LTDA #RISK Y SOLUTIONS GROUP LTDA #RISK Y SOLUTIONS GROUP LTDA #RISK Y SOLUTIONS GROUP LTDA #RISK Y SOLUTIONS GROUP LTDA #RISK Y SOLUTIONS GROUP LTDA
 
 rout48 = empresas['empresa48']['rout']
 compani48 = empresas['empresa48']['compani']
@@ -1275,11 +1033,7 @@ def risksol_listar_cre1():
 def risksol_listar_cre2():
     return compani48.create2l()
 
-@app.route(rout48+"stade/<int:id>")
-def risksol_stade(id):
-    return compani48.inactive(id)
-
-#SEGURIDAD APOLO LIMITADA #SEGURIDAD APOLO LIMITADA #SEGURIDAD APOLO LIMITADA #SEGURIDAD APOLO LIMITADA #SEGURIDAD APOLO LIMITADA #SEGURIDAD APOLO LIMITADA 
+#SEGURIDAD APOLO LIMITADA #SEGURIDAD APOLO LIMITADA #SEGURIDAD APOLO LIMITADA #SEGURIDAD APOLO LIMITADA #SEGURIDAD APOLO LIMITADA #SEGURIDAD APOLO LIMITADA
 
 rout49 = empresas['empresa49']['rout']
 compani49 = empresas['empresa49']['compani']
@@ -1300,12 +1054,7 @@ def segapolo_listar_cre1():
 def segapolo_listar_cre2():
     return compani49.create2l()
 
-@app.route(rout49+"stade/<int:id>")
-def segapolo_stade(id):
-    return compani49.inactive(id)
-
-
-#SEGURIDAD ATLANTIS LTDA #SEGURIDAD ATLANTIS LTDA #SEGURIDAD ATLANTIS LTDA #SEGURIDAD ATLANTIS LTDA #SEGURIDAD ATLANTIS LTDA #SEGURIDAD ATLANTIS LTDA 
+#SEGURIDAD ATLANTIS LTDA #SEGURIDAD ATLANTIS LTDA #SEGURIDAD ATLANTIS LTDA #SEGURIDAD ATLANTIS LTDA #SEGURIDAD ATLANTIS LTDA #SEGURIDAD ATLANTIS LTDA
 
 rout50 = empresas['empresa50']['rout']
 compani50 = empresas['empresa50']['compani']
@@ -1326,11 +1075,7 @@ def segatlas_listar_cre1():
 def segatlas_listar_cre2():
     return compani50.create2l()
 
-@app.route(rout50+"stade/<int:id>")
-def segatlas_stade(id):
-    return compani50.inactive(id)
-
-#SEGURIDAD CANADA LTDA #SEGURIDAD CANADA LTDA #SEGURIDAD CANADA LTDA #SEGURIDAD CANADA LTDA #SEGURIDAD CANADA LTDA #SEGURIDAD CANADA LTDA 
+#SEGURIDAD CANADA LTDA #SEGURIDAD CANADA LTDA #SEGURIDAD CANADA LTDA #SEGURIDAD CANADA LTDA #SEGURIDAD CANADA LTDA #SEGURIDAD CANADA LTDA
 
 rout51 = empresas['empresa51']['rout']
 compani51 = empresas['empresa51']['compani']
@@ -1351,11 +1096,8 @@ def segcan_listar_cre1():
 def segcan_listar_cre2():
     return compani51.create2l()
 
-@app.route(rout51+"stade/<int:id>")
-def segcan_stade(id):
-    return compani51.inactive(id)
 
-#SEGURIDAD CANINA DE COLOMBIA LTDA SECAN #SEGURIDAD CANINA DE COLOMBIA LTDA SECAN #SEGURIDAD CANINA DE COLOMBIA LTDA SECAN #SEGURIDAD CANINA DE COLOMBIA LTDA SECAN #SEGURIDAD CANINA DE COLOMBIA LTDA SECAN #SEGURIDAD CANINA DE COLOMBIA LTDA SECAN 
+#SEGURIDAD CANINA DE COLOMBIA LTDA SECAN #SEGURIDAD CANINA DE COLOMBIA LTDA SECAN #SEGURIDAD CANINA DE COLOMBIA LTDA SECAN #SEGURIDAD CANINA DE COLOMBIA LTDA SECAN #SEGURIDAD CANINA DE COLOMBIA LTDA SECAN #SEGURIDAD CANINA DE COLOMBIA LTDA SECAN
 
 rout52 = empresas['empresa52']['rout']
 compani52 = empresas['empresa52']['compani']
@@ -1376,11 +1118,7 @@ def segcanina_listar_cre1():
 def segcanina_listar_cre2():
     return compani52.create2l()
 
-@app.route(rout52+"stade/<int:id>")
-def segcanina_stade(id):
-    return compani52.inactive(id)
-
-#SEGURIDAD CENTRAL LTDA #SEGURIDAD CENTRAL LTDA #SEGURIDAD CENTRAL LTDA #SEGURIDAD CENTRAL LTDA #SEGURIDAD CENTRAL LTDA #SEGURIDAD CENTRAL LTDA 
+#SEGURIDAD CENTRAL LTDA #SEGURIDAD CENTRAL LTDA #SEGURIDAD CENTRAL LTDA #SEGURIDAD CENTRAL LTDA #SEGURIDAD CENTRAL LTDA #SEGURIDAD CENTRAL LTDA
 
 rout53 = empresas['empresa53']['rout']
 compani53 = empresas['empresa53']['compani']
@@ -1401,11 +1139,8 @@ def segcentral_listar_cre1():
 def segcentral_listar_cre2():
     return compani53.create2l()
 
-@app.route(rout53+"stade/<int:id>")
-def segcentral_stade(id):
-    return compani53.inactive(id)
 
-#SEGURIDAD DECAPOLIS LTDA #SEGURIDAD DECAPOLIS LTDA #SEGURIDAD DECAPOLIS LTDA #SEGURIDAD DECAPOLIS LTDA #SEGURIDAD DECAPOLIS LTDA #SEGURIDAD DECAPOLIS LTDA 
+#SEGURIDAD DECAPOLIS LTDA #SEGURIDAD DECAPOLIS LTDA #SEGURIDAD DECAPOLIS LTDA #SEGURIDAD DECAPOLIS LTDA #SEGURIDAD DECAPOLIS LTDA #SEGURIDAD DECAPOLIS LTDA
 
 rout54 = empresas['empresa54']['rout']
 compani54 = empresas['empresa54']['compani']
@@ -1426,11 +1161,8 @@ def segdeca_listar_cre1():
 def segdeca_listar_cre2():
     return compani54.create2l()
 
-@app.route(rout54+"stade/<int:id>")
-def segdeca_stade(id):
-    return compani54.inactive(id)
 
-#SEGURIDAD DIGITAL LTDA #SEGURIDAD DIGITAL LTDA #SEGURIDAD DIGITAL LTDA #SEGURIDAD DIGITAL LTDA #SEGURIDAD DIGITAL LTDA #SEGURIDAD DIGITAL LTDA 
+#SEGURIDAD DIGITAL LTDA #SEGURIDAD DIGITAL LTDA #SEGURIDAD DIGITAL LTDA #SEGURIDAD DIGITAL LTDA #SEGURIDAD DIGITAL LTDA #SEGURIDAD DIGITAL LTDA
 
 rout55 = empresas['empresa55']['rout']
 compani55 = empresas['empresa55']['compani']
@@ -1451,11 +1183,7 @@ def segdig_listar_cre1():
 def segdig_listar_cre2():
     return compani55.create2l()
 
-@app.route(rout55+"stade/<int:id>")
-def segdig_stade(id):
-    return compani55.inactive(id)
-
-#SEGURIDAD ELIAR LTDA #SEGURIDAD ELIAR LTDA #SEGURIDAD ELIAR LTDA #SEGURIDAD ELIAR LTDA #SEGURIDAD ELIAR LTDA #SEGURIDAD ELIAR LTDA 
+#SEGURIDAD ELIAR LTDA #SEGURIDAD ELIAR LTDA #SEGURIDAD ELIAR LTDA #SEGURIDAD ELIAR LTDA #SEGURIDAD ELIAR LTDA #SEGURIDAD ELIAR LTDA
 
 rout56 = empresas['empresa56']['rout']
 compani56 = empresas['empresa56']['compani']
@@ -1476,11 +1204,7 @@ def segelir_listar_cre1():
 def segelir_listar_cre2():
     return compani56.create2l()
 
-@app.route(rout56+"stade/<int:id>")
-def segelir_stade(id):
-    return compani56.inactive(id)
-
-#SEGURIDAD EXPLORER LTDA #SEGURIDAD EXPLORER LTDA #SEGURIDAD EXPLORER LTDA #SEGURIDAD EXPLORER LTDA #SEGURIDAD EXPLORER LTDA #SEGURIDAD EXPLORER LTDA 
+#SEGURIDAD EXPLORER LTDA #SEGURIDAD EXPLORER LTDA #SEGURIDAD EXPLORER LTDA #SEGURIDAD EXPLORER LTDA #SEGURIDAD EXPLORER LTDA #SEGURIDAD EXPLORER LTDA
 
 rout57 = empresas['empresa57']['rout']
 compani57 = empresas['empresa57']['compani']
@@ -1501,11 +1225,7 @@ def segexplo_listar_cre1():
 def segexplo_listar_cre2():
     return compani57.create2l()
 
-@app.route(rout57+"stade/<int:id>")
-def segexplo_stade(id):
-    return compani57.inactive(id)
-
-#SEGURIDAD GRAN METROPOLIS LTDA #SEGURIDAD GRAN METROPOLIS LTDA #SEGURIDAD GRAN METROPOLIS LTDA #SEGURIDAD GRAN METROPOLIS LTDA #SEGURIDAD GRAN METROPOLIS LTDA #SEGURIDAD GRAN METROPOLIS LTDA 
+#SEGURIDAD GRAN METROPOLIS LTDA #SEGURIDAD GRAN METROPOLIS LTDA #SEGURIDAD GRAN METROPOLIS LTDA #SEGURIDAD GRAN METROPOLIS LTDA #SEGURIDAD GRAN METROPOLIS LTDA #SEGURIDAD GRAN METROPOLIS LTDA
 
 rout58 = empresas['empresa58']['rout']
 compani58 = empresas['empresa58']['compani']
@@ -1526,11 +1246,7 @@ def seggran_listar_cre1():
 def seggran_listar_cre2():
     return compani58.create2l()
 
-@app.route(rout58+"stade/<int:id>")
-def seggran_stade(id):
-    return compani58.inactive(id)
-
-#SEGURIDAD HORUS LTDA #SEGURIDAD HORUS LTDA #SEGURIDAD HORUS LTDA #SEGURIDAD HORUS LTDA #SEGURIDAD HORUS LTDA #SEGURIDAD HORUS LTDA 
+#SEGURIDAD HORUS LTDA #SEGURIDAD HORUS LTDA #SEGURIDAD HORUS LTDA #SEGURIDAD HORUS LTDA #SEGURIDAD HORUS LTDA #SEGURIDAD HORUS LTDA
 
 rout59 = empresas['empresa59']['rout']
 compani59 = empresas['empresa59']['compani']
@@ -1551,11 +1267,7 @@ def seghorus_listar_cre1():
 def seghorus_listar_cre2():
     return compani59.create2l()
 
-@app.route(rout59+"stade/<int:id>")
-def seghorus_stade(id):
-    return compani59.inactive(id)
-
-#SEGURIDAD LOS VIRREYES LTDA #SEGURIDAD LOS VIRREYES LTDA #SEGURIDAD LOS VIRREYES LTDA #SEGURIDAD LOS VIRREYES LTDA #SEGURIDAD LOS VIRREYES LTDA #SEGURIDAD LOS VIRREYES LTDA 
+#SEGURIDAD LOS VIRREYES LTDA #SEGURIDAD LOS VIRREYES LTDA #SEGURIDAD LOS VIRREYES LTDA #SEGURIDAD LOS VIRREYES LTDA #SEGURIDAD LOS VIRREYES LTDA #SEGURIDAD LOS VIRREYES LTDA
 
 rout60 = empresas['empresa60']['rout']
 compani60 = empresas['empresa60']['compani']
@@ -1576,11 +1288,7 @@ def segvirrey_listar_cre1():
 def segvirrey_listar_cre2():
     return compani60.create2l()
 
-@app.route(rout60+"stade/<int:id>")
-def segvirrey_stade(id):
-    return compani60.inactive(id)
-
-#SEGURIDAD MODERNA COLOMBIANA LTDA #SEGURIDAD MODERNA COLOMBIANA LTDA #SEGURIDAD MODERNA COLOMBIANA LTDA #SEGURIDAD MODERNA COLOMBIANA LTDA #SEGURIDAD MODERNA COLOMBIANA LTDA #SEGURIDAD MODERNA COLOMBIANA LTDA 
+#SEGURIDAD MODERNA COLOMBIANA LTDA #SEGURIDAD MODERNA COLOMBIANA LTDA #SEGURIDAD MODERNA COLOMBIANA LTDA #SEGURIDAD MODERNA COLOMBIANA LTDA #SEGURIDAD MODERNA COLOMBIANA LTDA #SEGURIDAD MODERNA COLOMBIANA LTDA
 
 rout61 = empresas['empresa61']['rout']
 compani61 = empresas['empresa61']['compani']
@@ -1601,11 +1309,7 @@ def segmod_listar_cre1():
 def segmod_listar_cre2():
     return compani61.create2l()
 
-@app.route(rout61+"stade/<int:id>")
-def segmod_stade(id):
-    return compani61.inactive(id)
-
-#SEGURIDAD MONSERRATE LTDA #SEGURIDAD MONSERRATE LTDA #SEGURIDAD MONSERRATE LTDA #SEGURIDAD MONSERRATE LTDA #SEGURIDAD MONSERRATE LTDA #SEGURIDAD MONSERRATE LTDA 
+#SEGURIDAD MONSERRATE LTDA #SEGURIDAD MONSERRATE LTDA #SEGURIDAD MONSERRATE LTDA #SEGURIDAD MONSERRATE LTDA #SEGURIDAD MONSERRATE LTDA #SEGURIDAD MONSERRATE LTDA
 
 rout62 = empresas['empresa62']['rout']
 compani62 = empresas['empresa62']['compani']
@@ -1626,11 +1330,7 @@ def segmon_listar_cre1():
 def segmon_listar_cre2():
     return compani62.create2l()
 
-@app.route(rout62+"stade/<int:id>")
-def segmon_stade(id):
-    return compani62.inactive(id)
-
-#SEGURIDAD NAPOLES LTDA #SEGURIDAD NAPOLES LTDA #SEGURIDAD NAPOLES LTDA #SEGURIDAD NAPOLES LTDA #SEGURIDAD NAPOLES LTDA #SEGURIDAD NAPOLES LTDA 
+#SEGURIDAD NAPOLES LTDA #SEGURIDAD NAPOLES LTDA #SEGURIDAD NAPOLES LTDA #SEGURIDAD NAPOLES LTDA #SEGURIDAD NAPOLES LTDA #SEGURIDAD NAPOLES LTDA
 
 rout63 = empresas['empresa63']['rout']
 compani63 = empresas['empresa63']['compani']
@@ -1651,11 +1351,7 @@ def segnap_listar_cre1():
 def segnap_listar_cre2():
     return compani63.create2l()
 
-@app.route(rout63+"stade/<int:id>")
-def segnap_stade(id):
-    return compani63.inactive(id)
-
-#SEGURIDAD ORIENTAL LTDA #SEGURIDAD ORIENTAL LTDA #SEGURIDAD ORIENTAL LTDA #SEGURIDAD ORIENTAL LTDA #SEGURIDAD ORIENTAL LTDA #SEGURIDAD ORIENTAL LTDA 
+#SEGURIDAD ORIENTAL LTDA #SEGURIDAD ORIENTAL LTDA #SEGURIDAD ORIENTAL LTDA #SEGURIDAD ORIENTAL LTDA #SEGURIDAD ORIENTAL LTDA #SEGURIDAD ORIENTAL LTDA
 
 rout64 = empresas['empresa64']['rout']
 compani64 = empresas['empresa64']['compani']
@@ -1676,11 +1372,8 @@ def segori_listar_cre1():
 def segori_listar_cre2():
     return compani64.create2l()
 
-@app.route(rout64+"stade/<int:id>")
-def segori_stade(id):
-    return compani64.inactive(id)
 
-#SEGURIDAD PRIVADA ASESORIAS Y SERVICIO #SEGURIDAD PRIVADA ASESORIAS Y SERVICIO #SEGURIDAD PRIVADA ASESORIAS Y SERVICIO #SEGURIDAD PRIVADA ASESORIAS Y SERVICIO #SEGURIDAD PRIVADA ASESORIAS Y SERVICIO #SEGURIDAD PRIVADA ASESORIAS Y SERVICIO 
+#SEGURIDAD PRIVADA ASESORIAS Y SERVICIO #SEGURIDAD PRIVADA ASESORIAS Y SERVICIO #SEGURIDAD PRIVADA ASESORIAS Y SERVICIO #SEGURIDAD PRIVADA ASESORIAS Y SERVICIO #SEGURIDAD PRIVADA ASESORIAS Y SERVICIO #SEGURIDAD PRIVADA ASESORIAS Y SERVICIO
 
 rout65 = empresas['empresa65']['rout']
 compani65 = empresas['empresa65']['compani']
@@ -1701,11 +1394,7 @@ def segpri_listar_cre1():
 def segpri_listar_cre2():
     return compani65.create2l()
 
-@app.route(rout65+"stade/<int:id>")
-def segpri_stade(id):
-    return compani65.inactive(id)
-
-#SEGURIDAD PRIVADA CASTELL Y CIA LTDA #SEGURIDAD PRIVADA CASTELL Y CIA LTDA #SEGURIDAD PRIVADA CASTELL Y CIA LTDA #SEGURIDAD PRIVADA CASTELL Y CIA LTDA #SEGURIDAD PRIVADA CASTELL Y CIA LTDA #SEGURIDAD PRIVADA CASTELL Y CIA LTDA 
+#SEGURIDAD PRIVADA CASTELL Y CIA LTDA #SEGURIDAD PRIVADA CASTELL Y CIA LTDA #SEGURIDAD PRIVADA CASTELL Y CIA LTDA #SEGURIDAD PRIVADA CASTELL Y CIA LTDA #SEGURIDAD PRIVADA CASTELL Y CIA LTDA #SEGURIDAD PRIVADA CASTELL Y CIA LTDA
 
 rout66 = empresas['empresa66']['rout']
 compani66 = empresas['empresa66']['compani']
@@ -1726,11 +1415,7 @@ def segpricast_listar_cre1():
 def segpricast_listar_cre2():
     return compani66.create2l()
 
-@app.route(rout66+"stade/<int:id>")
-def segpricast_stade(id):
-    return compani66.inactive(id)
-
-#SEGURIDAD PRIVADA TEXAS LTDA #SEGURIDAD PRIVADA TEXAS LTDA #SEGURIDAD PRIVADA TEXAS LTDA #SEGURIDAD PRIVADA TEXAS LTDA #SEGURIDAD PRIVADA TEXAS LTDA #SEGURIDAD PRIVADA TEXAS LTDA 
+#SEGURIDAD PRIVADA TEXAS LTDA #SEGURIDAD PRIVADA TEXAS LTDA #SEGURIDAD PRIVADA TEXAS LTDA #SEGURIDAD PRIVADA TEXAS LTDA #SEGURIDAD PRIVADA TEXAS LTDA #SEGURIDAD PRIVADA TEXAS LTDA
 
 rout67 = empresas['empresa67']['rout']
 compani67 = empresas['empresa67']['compani']
@@ -1751,12 +1436,7 @@ def segtexas_listar_cre1():
 def segtexas_listar_cre2():
     return compani67.create2l()
 
-@app.route(rout67+"stade/<int:id>")
-def segtexas_stade(id):
-    return compani67.inactive(id)
-
-
-#SEGURIDAD Q A P LIMITADA #SEGURIDAD Q A P LIMITADA #SEGURIDAD Q A P LIMITADA #SEGURIDAD Q A P LIMITADA #SEGURIDAD Q A P LIMITADA #SEGURIDAD Q A P LIMITADA 
+#SEGURIDAD Q A P LIMITADA #SEGURIDAD Q A P LIMITADA #SEGURIDAD Q A P LIMITADA #SEGURIDAD Q A P LIMITADA #SEGURIDAD Q A P LIMITADA #SEGURIDAD Q A P LIMITADA
 
 rout68 = empresas['empresa68']['rout']
 compani68 = empresas['empresa68']['compani']
@@ -1777,11 +1457,7 @@ def segqapl_listar_cre1():
 def segqapl_listar_cre2():
     return compani68.create2l()
 
-@app.route(rout68+"stade/<int:id>")
-def segqapl_stade(id):
-    return compani68.inactive(id)
-
-#SEGURIDAD SIRIUS LTDA #SEGURIDAD SIRIUS LTDA #SEGURIDAD SIRIUS LTDA #SEGURIDAD SIRIUS LTDA #SEGURIDAD SIRIUS LTDA #SEGURIDAD SIRIUS LTDA 
+#SEGURIDAD SIRIUS LTDA #SEGURIDAD SIRIUS LTDA #SEGURIDAD SIRIUS LTDA #SEGURIDAD SIRIUS LTDA #SEGURIDAD SIRIUS LTDA #SEGURIDAD SIRIUS LTDA
 
 rout69 = empresas['empresa69']['rout']
 compani69 = empresas['empresa69']['compani']
@@ -1802,11 +1478,7 @@ def segsirius_listar_cre1():
 def segsirius_listar_cre2():
     return compani69.create2l()
 
-@app.route(rout69+"stade/<int:id>")
-def segsirius_stade(id):
-    return compani69.inactive(id)
-
-#SEGURIDAD SUPER LTDA #SEGURIDAD SUPER LTDA #SEGURIDAD SUPER LTDA #SEGURIDAD SUPER LTDA #SEGURIDAD SUPER LTDA #SEGURIDAD SUPER LTDA 
+#SEGURIDAD SUPER LTDA #SEGURIDAD SUPER LTDA #SEGURIDAD SUPER LTDA #SEGURIDAD SUPER LTDA #SEGURIDAD SUPER LTDA #SEGURIDAD SUPER LTDA
 
 rout70 = empresas['empresa70']['rout']
 compani70 = empresas['empresa70']['compani']
@@ -1827,11 +1499,7 @@ def segsuperl_listar_cre1():
 def segsuperl_listar_cre2():
     return compani70.create2l()
 
-@app.route(rout70+"stade/<int:id>")
-def segsuperl_stade(id):
-    return compani70.inactive(id)
-
-#SEGURIDAD TRANSBA #SEGURIDAD TRANSBA #SEGURIDAD TRANSBA #SEGURIDAD TRANSBA #SEGURIDAD TRANSBA #SEGURIDAD TRANSBA 
+#SEGURIDAD TRANSBA #SEGURIDAD TRANSBA #SEGURIDAD TRANSBA #SEGURIDAD TRANSBA #SEGURIDAD TRANSBA #SEGURIDAD TRANSBA
 
 rout71 = empresas['empresa71']['rout']
 compani71 = empresas['empresa71']['compani']
@@ -1852,11 +1520,7 @@ def segtrans_listar_cre1():
 def segtrans_listar_cre2():
     return compani71.create2l()
 
-@app.route(rout71+"stade/<int:id>")
-def segtrans_stade(id):
-    return compani71.inactive(id)
-
-#SEGURIDAD Y VIGILANCIA EXITO DE COLOMBIA #SEGURIDAD Y VIGILANCIA EXITO DE COLOMBIA #SEGURIDAD Y VIGILANCIA EXITO DE COLOMBIA #SEGURIDAD Y VIGILANCIA EXITO DE COLOMBIA #SEGURIDAD Y VIGILANCIA EXITO DE COLOMBIA #SEGURIDAD Y VIGILANCIA EXITO DE COLOMBIA 
+#SEGURIDAD Y VIGILANCIA EXITO DE COLOMBIA #SEGURIDAD Y VIGILANCIA EXITO DE COLOMBIA #SEGURIDAD Y VIGILANCIA EXITO DE COLOMBIA #SEGURIDAD Y VIGILANCIA EXITO DE COLOMBIA #SEGURIDAD Y VIGILANCIA EXITO DE COLOMBIA #SEGURIDAD Y VIGILANCIA EXITO DE COLOMBIA
 
 rout72 = empresas['empresa72']['rout']
 compani72 = empresas['empresa72']['compani']
@@ -1877,11 +1541,7 @@ def segexitocol_listar_cre1():
 def segexitocol_listar_cre2():
     return compani72.create2l()
 
-@app.route(rout72+"stade/<int:id>")
-def segexitocol_stade(id):
-    return compani72.inactive(id)
-
-#SEGURIDAD Y VIGILANCIA SERVICONCEL #SEGURIDAD Y VIGILANCIA SERVICONCEL #SEGURIDAD Y VIGILANCIA SERVICONCEL #SEGURIDAD Y VIGILANCIA SERVICONCEL #SEGURIDAD Y VIGILANCIA SERVICONCEL #SEGURIDAD Y VIGILANCIA SERVICONCEL 
+#SEGURIDAD Y VIGILANCIA SERVICONCEL #SEGURIDAD Y VIGILANCIA SERVICONCEL #SEGURIDAD Y VIGILANCIA SERVICONCEL #SEGURIDAD Y VIGILANCIA SERVICONCEL #SEGURIDAD Y VIGILANCIA SERVICONCEL #SEGURIDAD Y VIGILANCIA SERVICONCEL
 
 rout73 = empresas['empresa73']['rout']
 compani73 = empresas['empresa73']['compani']
@@ -1902,11 +1562,7 @@ def segservicon_listar_cre1():
 def segservicon_listar_cre2():
     return compani73.create2l()
 
-@app.route(rout73+"stade/<int:id>")
-def segservicon_stade(id):
-    return compani73.inactive(id)
-
-#SERVICIO DE VIGILANCIA HORIZONTAL LTDA S #SERVICIO DE VIGILANCIA HORIZONTAL LTDA S #SERVICIO DE VIGILANCIA HORIZONTAL LTDA S #SERVICIO DE VIGILANCIA HORIZONTAL LTDA S #SERVICIO DE VIGILANCIA HORIZONTAL LTDA S #SERVICIO DE VIGILANCIA HORIZONTAL LTDA S 
+#SERVICIO DE VIGILANCIA HORIZONTAL LTDA S #SERVICIO DE VIGILANCIA HORIZONTAL LTDA S #SERVICIO DE VIGILANCIA HORIZONTAL LTDA S #SERVICIO DE VIGILANCIA HORIZONTAL LTDA S #SERVICIO DE VIGILANCIA HORIZONTAL LTDA S #SERVICIO DE VIGILANCIA HORIZONTAL LTDA S
 
 rout74 = empresas['empresa74']['rout']
 compani74 = empresas['empresa74']['compani']
@@ -1927,11 +1583,7 @@ def servihorizon_listar_cre1():
 def servihorizon_listar_cre2():
     return compani74.create2l()
 
-@app.route(rout74+"stade/<int:id>")
-def servihorizon_stade(id):
-    return compani74.inactive(id)
-
-#SERVICIOS DE SEGURIDAD STAR DE COLOMBIA #SERVICIOS DE SEGURIDAD STAR DE COLOMBIA #SERVICIOS DE SEGURIDAD STAR DE COLOMBIA #SERVICIOS DE SEGURIDAD STAR DE COLOMBIA #SERVICIOS DE SEGURIDAD STAR DE COLOMBIA #SERVICIOS DE SEGURIDAD STAR DE COLOMBIA 
+#SERVICIOS DE SEGURIDAD STAR DE COLOMBIA #SERVICIOS DE SEGURIDAD STAR DE COLOMBIA #SERVICIOS DE SEGURIDAD STAR DE COLOMBIA #SERVICIOS DE SEGURIDAD STAR DE COLOMBIA #SERVICIOS DE SEGURIDAD STAR DE COLOMBIA #SERVICIOS DE SEGURIDAD STAR DE COLOMBIA
 
 rout75 = empresas['empresa75']['rout']
 compani75 = empresas['empresa75']['compani']
@@ -1952,11 +1604,7 @@ def sstarcol_listar_cre1():
 def sstarcol_listar_cre2():
     return compani75.create2l()
 
-@app.route(rout75+"stade/<int:id>")
-def sstarcol_stade(id):
-    return compani75.inactive(id)
-
-#SERVICIOS SEGURIDAD STAR DE COLOMBIA LTD #SERVICIOS SEGURIDAD STAR DE COLOMBIA LTD #SERVICIOS SEGURIDAD STAR DE COLOMBIA LTD #SERVICIOS SEGURIDAD STAR DE COLOMBIA LTD #SERVICIOS SEGURIDAD STAR DE COLOMBIA LTD #SERVICIOS SEGURIDAD STAR DE COLOMBIA LTD 
+#SERVICIOS SEGURIDAD STAR DE COLOMBIA LTD #SERVICIOS SEGURIDAD STAR DE COLOMBIA LTD #SERVICIOS SEGURIDAD STAR DE COLOMBIA LTD #SERVICIOS SEGURIDAD STAR DE COLOMBIA LTD #SERVICIOS SEGURIDAD STAR DE COLOMBIA LTD #SERVICIOS SEGURIDAD STAR DE COLOMBIA LTD
 
 rout76 = empresas['empresa76']['rout']
 compani76 = empresas['empresa76']['compani']
@@ -1977,13 +1625,7 @@ def servstarq_listar_cre1():
 def servstarq_listar_cre2():
     return compani76.create2l()
 
-@app.route(rout76+"stade/<int:id>")
-def servstarq_stade(id):
-    return compani76.inactive(id)
-
-
-
-#SERVISION DE COLOMBIA Y CIA LTDA #SERVISION DE COLOMBIA Y CIA LTDA #SERVISION DE COLOMBIA Y CIA LTDA #SERVISION DE COLOMBIA Y CIA LTDA #SERVISION DE COLOMBIA Y CIA LTDA #SERVISION DE COLOMBIA Y CIA LTDA 
+#SERVISION DE COLOMBIA Y CIA LTDA #SERVISION DE COLOMBIA Y CIA LTDA #SERVISION DE COLOMBIA Y CIA LTDA #SERVISION DE COLOMBIA Y CIA LTDA #SERVISION DE COLOMBIA Y CIA LTDA #SERVISION DE COLOMBIA Y CIA LTDA
 
 rout77 = empresas['empresa77']['rout']
 compani77 = empresas['empresa77']['compani']
@@ -2004,11 +1646,7 @@ def servcol_listar_cre1():
 def servcol_listar_cre2():
     return compani77.create2l()
 
-@app.route(rout77+"stade/<int:id>")
-def servcol_stade(id):
-    return compani77.inactive(id)
-
-#SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA 
+#SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA #SEVIN LTDA
 
 rout78 = empresas['empresa78']['rout']
 compani78 = empresas['empresa78']['compani']
@@ -2029,14 +1667,7 @@ def servin_listar_cre1():
 def servin_listar_cre2():
     return compani78.create2l()
 
-@app.route(rout78+"stade/<int:id>")
-def servin_stade(id):
-    return compani78.inactive(id)
-
-
-
-
-#TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA 
+#TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA #TOP GUARD LTDA
 
 rout79 = empresas['empresa79']['rout']
 compani79 = empresas['empresa79']['compani']
@@ -2057,11 +1688,7 @@ def topguard_listar_cre1():
 def topguard_listar_cre2():
     return compani79.create2l()
 
-@app.route(rout79+"stade/<int:id>")
-def topguard_stade(id):
-    return compani79.inactive(id)
-
-#TORONTO DE COLOMBIA LTDA #TORONTO DE COLOMBIA LTDA #TORONTO DE COLOMBIA LTDA #TORONTO DE COLOMBIA LTDA #TORONTO DE COLOMBIA LTDA #TORONTO DE COLOMBIA LTDA 
+#TORONTO DE COLOMBIA LTDA #TORONTO DE COLOMBIA LTDA #TORONTO DE COLOMBIA LTDA #TORONTO DE COLOMBIA LTDA #TORONTO DE COLOMBIA LTDA #TORONTO DE COLOMBIA LTDA
 
 rout80 = empresas['empresa80']['rout']
 compani80 = empresas['empresa80']['compani']
@@ -2082,11 +1709,7 @@ def toronto_listar_cre1():
 def toronto_listar_cre2():
     return compani80.create2l()
 
-@app.route(rout80+"stade/<int:id>")
-def toronto_stade(id):
-    return compani80.inactive(id)
-
-#UNION TEMPORAL MINTRANSPORTE C C 2018 #UNION TEMPORAL MINTRANSPORTE C C 2018 #UNION TEMPORAL MINTRANSPORTE C C 2018 #UNION TEMPORAL MINTRANSPORTE C C 2018 #UNION TEMPORAL MINTRANSPORTE C C 2018 #UNION TEMPORAL MINTRANSPORTE C C 2018 
+#UNION TEMPORAL MINTRANSPORTE C C 2018 #UNION TEMPORAL MINTRANSPORTE C C 2018 #UNION TEMPORAL MINTRANSPORTE C C 2018 #UNION TEMPORAL MINTRANSPORTE C C 2018 #UNION TEMPORAL MINTRANSPORTE C C 2018 #UNION TEMPORAL MINTRANSPORTE C C 2018
 
 rout81 = empresas['empresa81']['rout']
 compani81 = empresas['empresa81']['compani']
@@ -2107,11 +1730,7 @@ def uniontemmin_listar_cre1():
 def uniontemmin_listar_cre2():
     return compani81.create2l()
 
-@app.route(rout81+"stade/<int:id>")
-def uniontemmin_stade(id):
-    return compani81.inactive(id)
-
-#UNIÓN TEMPORAL TAC CENTRAL TRANSMILENIO #UNIÓN TEMPORAL TAC CENTRAL TRANSMILENIO #UNIÓN TEMPORAL TAC CENTRAL TRANSMILENIO #UNIÓN TEMPORAL TAC CENTRAL TRANSMILENIO #UNIÓN TEMPORAL TAC CENTRAL TRANSMILENIO #UNIÓN TEMPORAL TAC CENTRAL TRANSMILENIO 
+#UNIÓN TEMPORAL TAC CENTRAL TRANSMILENIO #UNIÓN TEMPORAL TAC CENTRAL TRANSMILENIO #UNIÓN TEMPORAL TAC CENTRAL TRANSMILENIO #UNIÓN TEMPORAL TAC CENTRAL TRANSMILENIO #UNIÓN TEMPORAL TAC CENTRAL TRANSMILENIO #UNIÓN TEMPORAL TAC CENTRAL TRANSMILENIO
 
 rout82 = empresas['empresa82']['rout']
 compani82 = empresas['empresa82']['compani']
@@ -2132,11 +1751,7 @@ def uniontemtrans_listar_cre1():
 def uniontemtrans_listar_cre2():
     return compani82.create2l()
 
-@app.route(rout82+"stade/<int:id>")
-def uniontemtrans_stade(id):
-    return compani82.inactive(id)
-
-#VIGIAS DE COLOMBIA SRL LTDA #VIGIAS DE COLOMBIA SRL LTDA #VIGIAS DE COLOMBIA SRL LTDA #VIGIAS DE COLOMBIA SRL LTDA #VIGIAS DE COLOMBIA SRL LTDA #VIGIAS DE COLOMBIA SRL LTDA 
+#VIGIAS DE COLOMBIA SRL LTDA #VIGIAS DE COLOMBIA SRL LTDA #VIGIAS DE COLOMBIA SRL LTDA #VIGIAS DE COLOMBIA SRL LTDA #VIGIAS DE COLOMBIA SRL LTDA #VIGIAS DE COLOMBIA SRL LTDA
 
 rout83 = empresas['empresa83']['rout']
 compani83 = empresas['empresa83']['compani']
@@ -2157,11 +1772,7 @@ def vigcol_listar_cre1():
 def vigcol_listar_cre2():
     return compani83.create2l()
 
-@app.route(rout83+"stade/<int:id>")
-def vigcol_stade(id):
-    return compani83.inactive(id)
-
-#VIGILANCIA ACOSTA LIMITADA #VIGILANCIA ACOSTA LIMITADA #VIGILANCIA ACOSTA LIMITADA #VIGILANCIA ACOSTA LIMITADA #VIGILANCIA ACOSTA LIMITADA #VIGILANCIA ACOSTA LIMITADA 
+#VIGILANCIA ACOSTA LIMITADA #VIGILANCIA ACOSTA LIMITADA #VIGILANCIA ACOSTA LIMITADA #VIGILANCIA ACOSTA LIMITADA #VIGILANCIA ACOSTA LIMITADA #VIGILANCIA ACOSTA LIMITADA
 
 rout84 = empresas['empresa84']['rout']
 compani84 = empresas['empresa84']['compani']
@@ -2182,11 +1793,7 @@ def vacosta_listar_cre1():
 def vacosta_listar_cre2():
     return compani84.create2l()
 
-@app.route(rout84+"stade/<int:id>")
-def vacosta_stade(id):
-    return compani84.inactive(id)
-
-#VIGILANCIA Y SEGURIDAD PRIVADA 007 LTDA #VIGILANCIA Y SEGURIDAD PRIVADA 007 LTDA #VIGILANCIA Y SEGURIDAD PRIVADA 007 LTDA #VIGILANCIA Y SEGURIDAD PRIVADA 007 LTDA #VIGILANCIA Y SEGURIDAD PRIVADA 007 LTDA #VIGILANCIA Y SEGURIDAD PRIVADA 007 LTDA 
+#VIGILANCIA Y SEGURIDAD PRIVADA 007 LTDA #VIGILANCIA Y SEGURIDAD PRIVADA 007 LTDA #VIGILANCIA Y SEGURIDAD PRIVADA 007 LTDA #VIGILANCIA Y SEGURIDAD PRIVADA 007 LTDA #VIGILANCIA Y SEGURIDAD PRIVADA 007 LTDA #VIGILANCIA Y SEGURIDAD PRIVADA 007 LTDA
 
 rout85 = empresas['empresa85']['rout']
 compani85 = empresas['empresa85']['compani']
@@ -2207,11 +1814,7 @@ def vigsegl_listar_cre1():
 def vigsegl_listar_cre2():
     return compani85.create2l()
 
-@app.route(rout85+"stade/<int:id>")
-def vigsegl_stade(id):
-    return compani85.inactive(id)
-
-#VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA 
+#VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA
 
 rout86 = empresas['empresa86']['rout']
 compani86 = empresas['empresa86']['compani']
@@ -2232,11 +1835,8 @@ def vigonsa_listar_cre1():
 def vigonsa_listar_cre2():
     return compani86.create2l()
 
-@app.route(rout86+"stade/<int:id>")
-def vigonsa_stade(id):
-    return compani86.inactive(id)
 
-#VISE LTDA #VISE LTDA #VISE LTDA #VISE LTDA #VISE LTDA #VISE LTDA 
+#VISE LTDA #VISE LTDA #VISE LTDA #VISE LTDA #VISE LTDA #VISE LTDA
 
 rout87 = empresas['empresa87']['rout']
 compani87 = empresas['empresa87']['compani']
@@ -2257,11 +1857,27 @@ def vise_listar_cre1():
 def vise_listar_cre2():
     return compani87.create2l()
 
-@app.route(rout87+"stade/<int:id>")
-def vise_stade(id):
-    return compani87.inactive(id)
 
+#embajada #embajada #embajada
 
+rout88 = empresas['empresa88']['rout']
+compani88 = empresas['empresa88']['compani']
+
+@app.route(rout88+"list")
+def embri_listarl():
+    return compani88.listl()
+
+@app.route(rout88+"list/<int:id>")
+def embri_listar_id(id):
+    return compani88.listlid(id)
+
+@app.route(rout88)
+def embri_listar_cre1():
+    return compani88.createl()
+
+@app.route(rout88+"create2", methods=["POST"])
+def embri_listar_cre2():
+    return compani88.create2l()
 
 
 if __name__== "__main__":

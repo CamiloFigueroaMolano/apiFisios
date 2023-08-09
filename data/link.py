@@ -188,7 +188,7 @@ datalink = {
     'empresa32':{
         'empresa':'G4S SECURE SOLUTIONS COLOMBIA S. A',
         'page':'G4S SECURE SOLUTIONS COLOMBIA S. A',
-        'link':'/g4s-secure-solutions-colombia-s.-a8403/',
+        'link':'/g4s-a8403/',
         'template': 'g4s',
     },
     'empresa33':{
@@ -520,5 +520,12 @@ datalink = {
         'page':'VISE LTDA',
         'link':'/vise-ltda6983/',
         'template': 'vise_ltda',
+    },
+
+    'empresa88':{
+        'empresa':'EMBAJADA BRITANICA',
+        'page':'EMBAJADA BRITANICA',
+        'link':'/embajada-britanica3320/',
+        'template': 'embajada_britanica',
     },
 }
