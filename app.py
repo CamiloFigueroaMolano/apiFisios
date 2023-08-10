@@ -1798,6 +1798,10 @@ def vacosta_listar_cre2():
 rout85 = empresas['empresa85']['rout']
 compani85 = empresas['empresa85']['compani']
 
+@app.route(rout85)
+def vigsegl_info():
+    return compani85.info()
+
 @app.route(rout85+"list")
 def vigsegl_listarl():
     return compani85.listl()
@@ -1806,13 +1810,21 @@ def vigsegl_listarl():
 def vigsegl_listar_id(id):
     return compani85.listlid(id)
 
-@app.route(rout85)
+@app.route(rout85+"cr")
 def vigsegl_listar_cre1():
     return compani85.createl()
 
 @app.route(rout85+"create2", methods=["POST"])
 def vigsegl_listar_cre2():
     return compani85.create2l()
+
+@app.route(rout85+"edit1/<id>")
+def vigsegl_edit1(id):
+    return compani85.edit1(id)
+
+@app.route(rout85+"editl/<id>", methods=["POST"])
+def vigsegl_editl(id):
+    return compani85.editl(id)
 
 #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA #VIGONSA LTDA
 

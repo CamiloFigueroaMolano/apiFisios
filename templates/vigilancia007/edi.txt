@@ -1,0 +1,153 @@
+{% extends './vigilancia007/layout.html' %}
+{% block title %} Información {% endblock %}
+{% block body %}
+
+<form method="post" action="{{ url_for('vigsegl_editl', id=val[0][0]) }}">
+    <container class="g-3 row">
+        {% for item in val%}
+            <!-- Persona quien registra -->
+            <div class="col-md-4">
+                <label for="Persona_quien_registra" class="form-label label1">Persona quien registra</label>
+                <div class="">
+                    <input type="text" name="Persona_quien_registra" value="{{item[2]}}">
+                </div>
+            </div>
+
+            <!-- Tipo de documento -->
+            <div class="col-md-4">
+                <label for="tipo_documento" class="form-label label1">Tipo de documento</label>
+                <div class="">
+                    <input type="text" name="tipo_documento" value="{{item[3]}}">
+                </div>
+            </div>
+
+            <!-- Numero de documento -->
+            <div class="col-md-4">
+                <label for="numero_documento" class="form-label label1">Numero de documento</label>
+                <div class="">
+                    <input type="text" name="numero_documento" value="{{item[4]}}">
+                </div>
+            </div>
+
+            <!-- Nombres -->
+            <div class="col-md-4">
+                <label for="nombre" class="form-label label1">Nombres</label>
+                <div class="">
+                    <input type="text" name="nombre" value="{{item[5]}}">
+                </div>
+            </div>
+
+            <!-- Apellidos -->
+            <div class="col-md-4">
+                <label for="Apellido" class="form-label label1">Apellidos</label>
+                <div class="">
+                    <input type="text" name="Apellido" value="{{item[6]}}">
+                </div>
+            </div>
+
+            <!-- Tipo examen -->
+            <div class="col-md-4">
+                <label for="Cargo" class="form-label label1">Tipo de examen</label>
+                <div class="">
+                    <input type="text" name="Cargo" value="{{item[7]}}">
+                </div>
+            </div>
+
+            <!-- Cargo -->
+            <div class="col-md-4">
+                <label for="Cargo" class="form-label label1">Cargo</label>
+                <div class="">
+                    <input type="text" name="Cargo" value="{{item[8]}}">
+                </div>
+            </div>
+
+            <!-- Direccion -->
+            <div class="col-md-4">
+                <label for="direccion" class="form-label label1">Direccion</label>
+                <div class="">
+                    <input type="text" name="direccion" value="{{item[9]}}">
+                </div>
+            </div>
+
+            <!-- Correo -->
+            <div class="col-md-4">
+                <label for="correo" class="form-label label1">Correo</label>
+                <div class="">
+                    <input type="text" name="correo" value="{{item[10]}}">
+                </div>
+            </div>
+
+            <!-- Numero celular -->
+            <div class="col-md-4">
+                <label for="celular" class="form-label label1">Numero de Celular</label>
+                <div class="">
+                    <input type="text" name="celular" value="{{item[11]}}">
+                </div>
+            </div>
+
+            <!-- Numero telefono -->
+            <div class="col-md-4">
+                <label for="telefono" class="form-label label1">Numero de Telefono Fijo</label>
+                <div class="">
+                    <input type="text" name="telefono" value="{{item[12]}}">
+                </div>
+            </div>
+
+            <!-- Genero -->
+            <div class="col-md-4">
+                <label for="genero" class="form-label label1">Genero</label>
+                <div class="">
+                    <input type="text" name="genero" value="{{item[13]}}">
+                </div>
+            </div>
+
+            <!-- RH -->
+            <div class="col-md-4">
+                <label for="RH" class="form-label label1">RH</label>
+                <div class="">
+                    <input type="text" name="RH" value="{{item[14]}}">
+                </div>
+            </div>
+
+            <!-- Fecha de nacimiento -->
+            <div class="col-md-4">
+                <label for="fecha_nacimiento" class="form-label label1">Fecha de Nacimiento</label>
+                <div class="">
+                    <input type="text" name="fecha_nacimiento" value="{{item[15]}}">
+                </div>
+            </div>
+
+            <!-- Pais de nacimiento -->
+            <div class="col-md-4">
+                <label for="pais_nacimiento" class="form-label label1">Pais de Nacimiento</label>
+                <div class="">
+                    <input type="text" name="pais_nacimiento" value="{{item[16]}}">
+                </div>
+            </div>
+
+            <!-- Ciudad de nacimiento -->
+            <div class="col-md-4">
+                <label for="ciudad_nacimiento" class="form-label label1">Ciudad de Nacimiento</label>
+                <div class="">
+                    <input type="text" name="ciudad_nacimiento" value="{{item[17]}}">
+                </div>
+            </div>
+
+            <!-- ESTADO -->
+            <div class="row col-md-4">
+                <label class="form-label label1">Estado</label>
+                <div class="exam">
+                    {{item[18]}}
+                </div>
+            </div>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-3 mt-3">
+                    <button type="submit" class="btn btn-primary" id="boton1">Guardar Cambios</button>
+                </div>
+            </div>
+        {% endfor %}
+    </container>
+</form>
+
+{% endblock %}

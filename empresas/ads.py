@@ -26,6 +26,9 @@ class ads:
         self.page = page
         self.template = template
 
+    def info(self):
+        return render_template("/tratamiento.html")
+
     def listl(self):
     #llamda a la api
         result = sheet.values().get(spreadsheetId = SPREADSHEET_ID, range = self.page+'!A2:XFD').execute()
@@ -70,8 +73,8 @@ class ads:
         var10 = request.form['pais_nacimiento']
         var11 = request.form['ciudad_nacimiento']
 
-           # Lista de campos obligatorios (nombres de los campos)
-        required_fields = ['Persona_quien_registra', 'tipo_documento', 'numero_documento', 'nombre', 'Apellido', 'Cargo', 'celular']
+        # Lista de campos obligatorios (nombres de los campos)
+        required_fields = ['Persona_quien_registra', 'tipo_documento', 'numero_documento', 'nombre', 'Apellido', 'Cargo', 'celular','RH','fecha_nacimiento']
         
         # Verificar que los campos obligatorios estén llenos
         for field_name in required_fields:
@@ -94,13 +97,10 @@ class ads:
         else:# Manejar el caso en el que la secuencia está vacía
             last_id = 0
         new_id = last_id + 1
-
         # Convertir la lista de valores en una cadena separada por comas
         var13 = ",".join(var13)
-        #solicitu se cra como activa
-        var17 = 'ACTIVO'
         #Debe ser una matriz por eso el doble [[]]
-        values = [[new_id,var0,var15,var1,var2,var3,var12,var13,var16,var4,var5,var6,var7,var14,var8,var9,var10,var11,var17]]
+        values = [[new_id,var0,var15,var1,var2,var3,var12,var13,var16,var4,var5,var6,var7,var14,var8,var9,var10,var11]]
 
         #Llamamos a la api
         result = sheet.values().append(spreadsheetId=SPREADSHEET_ID,
@@ -110,6 +110,21 @@ class ads:
 
         #print(f"Datos instertados correctamente.\n{(result.get('create').get('createcells'))}")
         return render_template(self.template+"/create.html",datos=values)
+
+    def edit1(self,id):
+        criterio = str(id)
+
+        # Obtener los datos actuales de la hoja
+        result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range=self.page+'!A:XFD').execute()
+        values = result.get('values', [])
+
+        resultados = []
+        # Buscar la fila que coincida con el criterio de búsqueda (ID)
+        for row in values[1:]:
+            if str(row[0]) == criterio:  # Comparar el ID en la primera columna con el criterio
+                resultados.append(row)
+                break  # Romper el bucle una vez que se encuentre la coincidencia
+        return render_template(self.template+"/edit.html", val=resultados)
 
     def editl(self, id):
         criterio = str(id)
@@ -135,38 +150,20 @@ class ads:
                 values[index][10] = request.form['correo']
                 values[index][11] = request.form['celular']
                 values[index][12] = request.form['telefono']
-                values[index][13] = request.form['Genero']
+                #values[index][13] = request.form['Genero']
                 values[index][14] = request.form['RH']
                 values[index][15] = request.form['fecha_nacimiento']
                 values[index][16] = request.form['pais_nacimiento']
                 values[index][17] = request.form['ciudad_nacimiento']
                 # Actualizar la fila en la hoja de cálculo
                 result = sheet.values().update(spreadsheetId=SPREADSHEET_ID,
-                                               range=self.page+'!A'+str(index+1)+':XFD'+str(index+1),
-                                               valueInputOption='USER_ENTERED',
-                                               body={'values': [values[index]]}).execute()
+                                            range=self.page+'!A'+str(index+1)+':XFD'+str(index+1),
+                                            valueInputOption='USER_ENTERED',
+                                            body={'values': [values[index]]}).execute()
                 break  # Romper el bucle una vez que se haya encontrado y actualizado la fila
         else:
             # Manejar el caso en el que no se encuentre el ID, si es necesario
             return "ID no encontrado."
 
         # Redirigir a la página donde se muestra la información actualizada
-        return render_template(self.template+"/edit.html", item=values[index])
-
-    # def inactive(self,id):
-    #     """Función para cambiar estado del usuario"""
-    #     criterio = str(id)
-
-    #     # Obtener los datos actuales de la hoja
-    #     result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range=self.page+'!A:XDF').execute()
-    #     values = result.get('values', [])
-
-    #     # Buscar la fila que coincida con el criterio de búsqueda (ID)
-    #     for row in values[1:]:
-    #         if str(row[0]) == criterio:
-    #             row[18] = 'INACTIVO'
-    #             break
-    #     update_values = {'values': values}
-    #     update_result = sheet.values().update(spreadsheetId=SPREADSHEET_ID, range=self.page+'!A:XDF',
-    #                                             valueInputOption='USER_ENTERED', body=update_values).execute()
-    #     return redirect(request.referrer)
+        return redirect(url_for('vigsegl_listarl'))
