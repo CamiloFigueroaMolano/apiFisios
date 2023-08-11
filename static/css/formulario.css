@@ -1,0 +1,24 @@
+body {
+   
+    background-image: linear-gradient(to right, #79C235 50%, #1E73BE 50%);
+    padding-bottom: 700px;
+}
+
+.container__formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 13em;
+}
+  
+  .container__logo {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 15%;
+    height: auto;
+  }
+
+
+

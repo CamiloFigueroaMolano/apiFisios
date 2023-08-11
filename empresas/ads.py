@@ -27,7 +27,7 @@ class ads:
         self.template = template
 
     def info(self):
-        return render_template("/tratamiento.html")
+        return render_template(self.template +"/tratamiento.html")
 
     def listl(self):
     #llamda a la api
@@ -166,4 +166,4 @@ class ads:
             return "ID no encontrado."
 
         # Redirigir a la página donde se muestra la información actualizada
-        return redirect(url_for('vigsegl_listarl'))
+        return render_template(self.template +"/list.html",val=values)

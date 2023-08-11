@@ -146,12 +146,15 @@
                     <a class="btn btn-primary mt-3" id="boton1" href="/embajada-britanica3320/stade/{{item[0]}}">Cambiar estado</a>
         </div>
 
-        {% endfor %}
         <div class="row justify-content-center allign-items-center">
             <div class="col-md-3 mt-3">
                 <a class="btn btn-primary" id="boton1" href="{{url_for('embri_listarl')}}">Volver</a>
+                <a class="btn btn-warning" id="edit"  href="{{url_for('embri_edit1', id=(item[0][0]))}}">
+                    editar
+                </a>
             </div>
         </div>
     </container>
+    {% endfor %}
 
 {% endblock %}

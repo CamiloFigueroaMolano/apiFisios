@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Tratamiento de Datos</title>
-    <link rel="stylesheet" href="../static/css/tratamiento.css">
-    <link rel="stylesheet" href="/tratamiento.style.css">
+    <link rel="stylesheet" href="../../static/css/tratamiento.css">
+    <link rel="stylesheet" href="../../static/css/tratamiento.style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script>
@@ -25,7 +25,7 @@
     <header>
         <h1 class="titulo">Fisios<span class="marca">&reg;</span></h1>
     </header>
-    <img class="fondo" src="./img/fondo.PNG" alt="">
+    <img class="fondo" src="../../static/img/Fondo.jpeg" alt="">
     <div class="center">
 		<h1 class="center-title">Política de Tratamiento de Datos</h1>
 		<div id="policy">
@@ -37,7 +37,7 @@
 				<li>Crear bases de datos para los fines aquí descritos.</li>
 			</ul>
 		</div>
-		<form class="formulario" action="formulario.html">
+		<form class="formulario" action="{{url_for('embri_listarl')}}">
 			<label for="accept"><input type="radio" id="accept" name="policy" value="yes" onclick="enableSubmit()">Acepto la política de tratamiento de datos</label>
 			<br>
 			<label for="reject"><input type="radio" id="reject" name="policy" value="no" onclick="enableSubmit()">No acepto la política de tratamiento de datos</label>

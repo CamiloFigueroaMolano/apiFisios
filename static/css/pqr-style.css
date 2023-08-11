@@ -1,0 +1,251 @@
+
+/* CSS Navbar!*/
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'48;
+    scale: 2;
+    padding-right: 1rem;
+    color: white;
+}
+
+
+.caja {
+    width: auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+nav {
+    background: #1E73BE;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6rem;
+
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 5rem;
+    font-weight: bold;
+
+}
+
+.imglogo {
+    position: relative;
+    width: 130px;
+    margin-left: 80px;
+
+
+}
+
+nav a {
+    position: relative;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 0;
+
+}
+
+.imgnav {
+    position: absolute;
+    left: -38px;
+    height: 3em;
+    width: 3em;
+
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+/*socialmedia*/
+.social-media-icons {
+    position: fixed;
+    right: 0;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 100;
+    scale: 1.4;
+
+}
+
+.social-media-icons a img {
+    display: block;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #65C22C;
+    border-radius: 50%;
+    padding-top: 4px;
+}
+
+.Instagram:hover {
+    transform: scale(2);
+    transition: transform 0.3s ease;
+}
+
+.Whatsapp:hover {
+    transform: scale(2);
+    transition: transform 0.3s ease;
+}
+
+.Facebook:hover {
+    transform: scale(2);
+    transition: transform 0.3s ease;
+}
+
+  .contactanos{
+    margin-top: 150px;
+  }
+
+  .titulo {
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+
+form {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type=text], input[type=email], input[type=tel], textarea {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #008CBA;
+    border: none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #005E80;
+}
+
+.definitions {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.definition {
+    margin-bottom: 10px;
+}
+
+.definition h3 {
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+/*VENTANA MODAL FORMULARIO*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+/*FIN MODAL FORMULARIO*/ 
+
+@media screen and (min-width: 1200px) {
+
+    .formulario {
+        justify-self: center;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        background: #1E73BE;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height: auto;
+    }
+
+    .formulario {
+        max-width: 100vw;
+    }
+
+}
+
+
+
+
+
+

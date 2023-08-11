@@ -138,12 +138,15 @@
         </div>
 
 
-        {% endfor %}
         <div class="row justify-content-center allign-items-center">
             <div class="col-md-3 mt-3">
                 <a class="btn btn-primary" id="boton1" href="{{url_for('vacosta_listarl')}}">Volver</a>
+                <a class="btn btn-warning" id="edit"  href="{{url_for('vacosta_edit1', id=(item[0]))}}">
+                    editar
+                </a>
             </div>
         </div>
+        {% endfor %}
     </container>
 
 {% endblock %}

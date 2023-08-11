@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Tratamiento de Datos</title>
+    <link rel="stylesheet" href="../../static/css/tratamiento.css">
+    <link rel="stylesheet" href="../../static/css/tratamiento.style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script>
+		function enableSubmit() {
+			var accept = document.getElementById("accept");
+			var submit = document.getElementById("submit");
+			if (accept.checked) {
+				submit.disabled = false;
+			} else {
+				submit.disabled = true;
+			}
+		}
+	</script>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Fisios<span class="marca">&reg;</span></h1>
+    </header>
+    <img class="fondo" src="../../static/img/Fondo.jpeg" alt="">
+    <div class="center">
+		<h1 class="center-title">Política de Tratamiento de Datos</h1>
+		<div id="policy">
+			<p>De conformidad con lo dispuesto en la Constitución Política de Colombia (artículo 15), Ley 1581 de 2012 y el Decreto 1377 de 2013 y demás normas concordantes, declaro que AUTORIZO DE FORMA LIBRE Y VOLUNTARIA a FISIOS CENTRO DE TERAPIA S.A.S., para que realice el tratamiento de mis datos personales para las siguientes finalidades:</p>
+			<ul>
+				<li>Cumplir con la prestación de los servicios de la IPS que sean contratados por el titular.</li>
+				<li>Gestionar trámites (solicitudes, quejas, reclamos) realizar análisis de riesgo, efectuar encuestas de satisfacción respecto de los servicios de la empresa.</li>
+				<li>Presentar reportes obligatorios ante las autoridades de inspección, vigilancia y control.</li>
+				<li>Crear bases de datos para los fines aquí descritos.</li>
+			</ul>
+		</div>
+		<form class="formulario" action="{{url_for('pph_listarl')}}">
+			<label for="accept"><input type="radio" id="accept" name="policy" value="yes" onclick="enableSubmit()">Acepto la política de tratamiento de datos</label>
+			<br>
+			<label for="reject"><input type="radio" id="reject" name="policy" value="no" onclick="enableSubmit()">No acepto la política de tratamiento de datos</label>
+			<br><br>
+			<input type="submit" id="submit" value="Enviar" disabled>
+		</form>
+	</div>
+    
+</body>
+</html>

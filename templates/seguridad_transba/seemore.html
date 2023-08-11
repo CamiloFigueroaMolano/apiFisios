@@ -138,12 +138,15 @@
         </div>
         </div>
 
-        {% endfor %}
         <div class="row justify-content-center allign-items-center">
             <div class="col-md-3 mt-3">
                 <a class="btn btn-primary" id="boton1" href="{{url_for('segtrans_listarl')}}">Volver</a>
+                <a class="btn btn-warning" id="edit"  href="{{url_for('segtrans_edit1', id=(item[0][0]))}}">
+                    editar
+                </a>
             </div>
         </div>
     </container>
+    {% endfor %}
 
 {% endblock %}
