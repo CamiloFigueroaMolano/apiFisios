@@ -1,8 +1,8 @@
-{% extends './admejores/layout.html' %}
+{% extends './vigilancia007/layout.html' %}
 {% block title %} Editar {% endblock %}
 {% block body %}
 
-<form method="post" action="{{ url_for('ads_editl', id=val[0][0]) }}" class="g-3 row" onsubmit="return validateForm();">
+<form method="post" action="{{ url_for('vigsegl_editl', id=val[0][0]) }}" class="g-3 row" onsubmit="return validateForm();">
     {% for item in val%}
 
     <!--#persona quien registra-->
@@ -216,6 +216,7 @@
     <section class="row justify-content-center allign-items-center pt-5">
                 <!--tipo de examen-->
                 <div class="col-md-4">
+                    <p class="fw-bolder"> Examens actuales: {{item[7]}} </p>
                     <label class="form-label">Tipo de examen</label>
                     <div>
                         <div class="form-check" >
@@ -274,7 +275,7 @@
     </section>
 </form>
             <div class="row justify-content-center allign-items-center"></div>
-                <form class= "row justify-content-start allign-items-center " action="{{url_for('ads_listar_id', id=(item[0][0]))}}">
+                <form class= "row justify-content-start allign-items-center " action="{{url_for('vigsegl_listar_id', id=(item[0][0]))}}">
                     <button type="submit" class="btn btn-primary col-2">volver</button>
                 </form>
             </div>
