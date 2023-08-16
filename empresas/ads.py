@@ -70,11 +70,12 @@ class ads:
         var14 = request.form['Genero']
         var8 = request.form['RH']
         var9 = request.form['fecha_nacimiento']
+        print(var9)
         var10 = request.form['pais_nacimiento']
         var11 = request.form['ciudad_nacimiento']
 
         # Lista de campos obligatorios (nombres de los campos)
-        required_fields = ['Persona_quien_registra', 'tipo_documento', 'numero_documento', 'nombre', 'Apellido', 'Cargo', 'celular','RH','fecha_nacimiento']
+        required_fields = ['Persona_quien_registra', 'tipo_documento', 'numero_documento', 'nombre', 'Apellido', 'Cargo', 'celular','RH']
         
         # Verificar que los campos obligatorios estén llenos
         for field_name in required_fields:
@@ -113,7 +114,6 @@ class ads:
 
     def edit1(self,id):
         criterio = str(id)
-
         # Obtener los datos actuales de la hoja
         result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range=self.page+'!A:XFD').execute()
         values = result.get('values', [])
@@ -128,13 +128,13 @@ class ads:
 
     def editl(self, id):
         criterio = str(id)
-
         # Obtener los datos actuales de la hoja
         result = sheet.values().get(spreadsheetId=SPREADSHEET_ID, range=self.page+'!A:XFD').execute()
         values = result.get('values', [])
 
         # Buscar la fila que coincida con el criterio de búsqueda (ID)
         for index, row in enumerate(values[1:], 1):
+  
             if str(row[0]) == criterio:  # Comparar el ID en la primera columna con el criterio
                 # Editar los datos de la fila encontrada
                 fecha = datetime.now()
@@ -150,7 +150,7 @@ class ads:
                 values[index][10] = request.form['correo']
                 values[index][11] = request.form['celular']
                 values[index][12] = request.form['telefono']
-                #values[index][13] = request.form['Genero']
+                values[index][13] = request.form['Genero']
                 values[index][14] = request.form['RH']
                 values[index][15] = request.form['fecha_nacimiento']
                 values[index][16] = request.form['pais_nacimiento']

@@ -24,8 +24,9 @@ def ltda_info():
 def ltda_listarl():
     return compani1.listl()
 
-@app.route(rout1+"list/<int:id>")
+@app.route(rout1+"list/<string:id>")
 def ltda_listar_id(id):
+    print(id)
     return compani1.listlid(id)
 
 @app.route(rout1+"cr")
@@ -36,11 +37,12 @@ def ltda_listar_cre1():
 def ltda_listar_cre2():
     return compani1.create2l()
 
-@app.route(rout1+"edit1/<id>")
+@app.route(rout1+"edit1/<string:id>")
 def ltda_edit1(id):
+    print(id)
     return compani1.edit1(id)
 
-@app.route(rout1+"editl/<id>", methods=["POST"])
+@app.route(rout1+"editl/<string:id>", methods=["POST"])
 def ltda_editl(id):
     return compani1.editl(id)
 
@@ -57,7 +59,7 @@ def ads_info():
 def ads_listarl():
     return compani2.listl()
 
-@app.route(rout2+"list/<int:id>")
+@app.route(rout2+"list/<string:id>")
 def ads_listar_id(id):
     return compani2.listlid(id)
 
@@ -69,11 +71,11 @@ def ads_listar_cre1():
 def ads_listar_cre2():
     return compani2.create2l()
 
-@app.route(rout2+"edit1/<id>")
+@app.route(rout2+"edit1/<string:id>")
 def ads_edit1(id):
     return compani2.edit1(id)
 
-@app.route(rout2+"editl/<id>", methods=["POST"])
+@app.route(rout2+"editl/<string:id>", methods=["POST"])
 def ads_editl(id):
     return compani2.editl(id)
 
@@ -91,7 +93,7 @@ def asp_info():
 def asp_listarl():
     return compani3.listl()
 
-@app.route(rout3+"list/<int:id>")
+@app.route(rout3+"list/<string:id>")
 def asp_listar_id(id):
     return compani3.listlid(id)
 
@@ -103,11 +105,11 @@ def asp_listar_cre1():
 def asp_listar_cre2():
     return compani3.create2l()
 
-@app.route(rout3+"edit1/<id>")
+@app.route(rout3+"edit1/<string:id>")
 def asp_edit1(id):
     return compani3.edit1(id)
 
-@app.route(rout3+"editl/<id>", methods=["POST"])
+@app.route(rout3+"editl/<string:id>", methods=["POST"])
 def asp_editl(id):
     return compani3.editl(id)
 
@@ -125,7 +127,7 @@ def amcovit_info():
 def amcovit_listarl():
     return compani4.listl()
 
-@app.route(rout4+"list/<int:id>")
+@app.route(rout4+"list/<string:id>")
 def amcovit_listar_id(id):
     return compani4.listlid(id)
 
@@ -137,11 +139,11 @@ def amcovit_listar_cre1():
 def amcovit_listar_cre2():
     return compani4.create2l()
 
-@app.route(rout4+"edit1/<id>")
+@app.route(rout4+"edit1/<string:id>")
 def amcovit_edit1(id):
     return compani4.edit1(id)
 
-@app.route(rout4+"editl/<id>", methods=["POST"])
+@app.route(rout4+"editl/<string:id>", methods=["POST"])
 def amcovit_editl(id):
     return compani4.editl(id)
 
@@ -159,7 +161,7 @@ def anis_info():
 def anis_listarl():
     return compani5.listl()
 
-@app.route(rout5+"list/<int:id>")
+@app.route(rout5+"list/<string:id>")
 def anis_listar_id(id):
     return compani5.listlid(id)
 
@@ -171,11 +173,11 @@ def anis_listar_cre1():
 def anis_listar_cre2():
     return compani5.create2l()
 
-@app.route(rout5+"edit1/<id>")
+@app.route(rout5+"edit1/<string:id>")
 def anis_edit1(id):
     return compani5.edit1(id)
 
-@app.route(rout5+"editl/<id>", methods=["POST"])
+@app.route(rout5+"editl/<string:id>", methods=["POST"])
 def anis_editl(id):
     return compani5.editl(id)
 
@@ -193,7 +195,7 @@ def aseisa_info():
 def aseisa_listarl():
     return compani6.listl()
 
-@app.route(rout6+"list/<int:id>")
+@app.route(rout6+"list/<string:id>")
 def aseisa_listar_id(id):
     return compani6.listlid(id)
 
@@ -205,11 +207,11 @@ def aseisa_listar_cre1():
 def aseisa_listar_cre2():
     return compani6.create2l()
 
-@app.route(rout6+"edit1/<id>")
+@app.route(rout6+"edit1/<string:id>")
 def aseisa_edit1(id):
     return compani6.edit1(id)
 
-@app.route(rout6+"editl/<id>", methods=["POST"])
+@app.route(rout6+"editl/<string:id>", methods=["POST"])
 def aseisa_editl(id):
     return compani6.editl(id)
 
@@ -227,7 +229,7 @@ def asep_info():
 def asep_listarl():
     return compani7.listl()
 
-@app.route(rout7+"list/<int:id>")
+@app.route(rout7+"list/<string:id>")
 def asep_listar_id(id):
     return compani7.listlid(id)
 
@@ -239,11 +241,11 @@ def asep_listar_cre1():
 def asep_listar_cre2():
     return compani7.create2l()
 
-@app.route(rout7+"edit1/<id>")
+@app.route(rout7+"edit1/<string:id>")
 def asep_edit1(id):
     return compani7.edit1(id)
 
-@app.route(rout7+"editl/<id>", methods=["POST"])
+@app.route(rout7+"editl/<string:id>", methods=["POST"])
 def asep_editl(id):
     return compani7.editl(id)
 
@@ -261,7 +263,7 @@ def atlacia_info():
 def atlacia_listarl():
     return compani8.listl()
 
-@app.route(rout8+"list/<int:id>")
+@app.route(rout8+"list/<string:id>")
 def atlacia_listar_id(id):
     return compani8.listlid(id)
 
@@ -273,11 +275,11 @@ def atlacia_listar_cre1():
 def atlacia_listar_cre2():
     return compani8.create2l()
 
-@app.route(rout8+"edit1/<id>")
+@app.route(rout8+"edit1/<string:id>")
 def atlacia_edit1(id):
     return compani8.edit1(id)
 
-@app.route(rout8+"editl/<id>", methods=["POST"])
+@app.route(rout8+"editl/<string:id>", methods=["POST"])
 def atlacia_editl(id):
     return compani8.editl(id)
 
@@ -295,7 +297,7 @@ def atmoseg_info():
 def atmoseg_listarl():
     return compani9.listl()
 
-@app.route(rout9+"list/<int:id>")
+@app.route(rout9+"list/<string:id>")
 def atmoseg_listar_id(id):
     return compani9.listlid(id)
 
@@ -307,11 +309,11 @@ def atmoseg_listar_cre1():
 def atmoseg_listar_cre2():
     return compani9.create2l()
 
-@app.route(rout9+"edit1/<id>")
+@app.route(rout9+"edit1/<string:id>")
 def atmoseg_edit1(id):
     return compani9.edit1(id)
 
-@app.route(rout9+"editl/<id>", methods=["POST"])
+@app.route(rout9+"editl/<string:id>", methods=["POST"])
 def atmoseg_editl(id):
     return compani9.editl(id)
 
@@ -329,7 +331,7 @@ def bogseg_info():
 def bogseg_listarl():
     return compani10.listl()
 
-@app.route(rout10+"list/<int:id>")
+@app.route(rout10+"list/<string:id>")
 def bogseg_listar_id(id):
     return compani10.listlid(id)
 
@@ -341,11 +343,11 @@ def bogseg_listar_cre1():
 def bogseg_listar_cre2():
     return compani10.create2l()
 
-@app.route(rout10+"edit1/<id>")
+@app.route(rout10+"edit1/<string:id>")
 def bogseg_edit1(id):
     return compani10.edit1(id)
 
-@app.route(rout10+"editl/<id>", methods=["POST"])
+@app.route(rout10+"editl/<string:id>", methods=["POST"])
 def bogseg_editl(id):
     return compani10.editl(id)
 
@@ -364,7 +366,7 @@ def brinks_info():
 def brinks_listarl():
     return compani11.listl()
 
-@app.route(rout11+"list/<int:id>")
+@app.route(rout11+"list/<string:id>")
 def brinks_listar_id(id):
     return compani11.listlid(id)
 
@@ -376,11 +378,11 @@ def brinks_listar_cre1():
 def brinks_listar_cre2():
     return compani11.create2l()
 
-@app.route(rout11+"edit1/<id>")
+@app.route(rout11+"edit1/<string:id>")
 def brinks_edit1(id):
     return compani11.edit1(id)
 
-@app.route(rout11+"editl/<id>", methods=["POST"])
+@app.route(rout11+"editl/<string:id>", methods=["POST"])
 def brinks_editl(id):
     return compani11.editl(id)
 
@@ -398,7 +400,7 @@ def claseg_info():
 def claseg_listarl():
     return compani12.listl()
 
-@app.route(rout12+"list/<int:id>")
+@app.route(rout12+"list/<string:id>")
 def claseg_listar_id(id):
     return compani12.listlid(id)
 
@@ -410,11 +412,11 @@ def claseg_listar_cre1():
 def claseg_listar_cre2():
     return compani12.create2l()
 
-@app.route(rout12+"edit1/<id>")
+@app.route(rout12+"edit1/<string:id>")
 def claseg_edit1(id):
     return compani12.edit1(id)
 
-@app.route(rout12+"editl/<id>", methods=["POST"])
+@app.route(rout12+"editl/<string:id>", methods=["POST"])
 def claseg_editl(id):
     return compani12.editl(id)
 
@@ -432,7 +434,7 @@ def pph_info():
 def pph_listarl():
     return compani13.listl()
 
-@app.route(rout13+"list/<int:id>")
+@app.route(rout13+"list/<string:id>")
 def pph_listar_id(id):
     return compani13.listlid(id)
 
@@ -444,11 +446,11 @@ def pph_listar_cre1():
 def pph_listar_cre2():
     return compani13.create2l()
 
-@app.route(rout13+"edit1/<id>")
+@app.route(rout13+"edit1/<string:id>")
 def pph_edit1(id):
     return compani13.edit1(id)
 
-@app.route(rout13+"editl/<id>", methods=["POST"])
+@app.route(rout13+"editl/<string:id>", methods=["POST"])
 def pph_editl(id):
     return compani13.editl(id)
 
@@ -466,7 +468,7 @@ def ccst_info():
 def ccst_listarl():
     return compani14.listl()
 
-@app.route(rout14+"list/<int:id>")
+@app.route(rout14+"list/<string:id>")
 def ccst_listar_id(id):
     return compani14.listlid(id)
 
@@ -478,11 +480,11 @@ def ccst_listar_cre1():
 def ccst_listar_cre2():
     return compani14.create2l()
 
-@app.route(rout14+"edit1/<id>")
+@app.route(rout14+"edit1/<string:id>")
 def ccst_edit1(id):
     return compani14.edit1(id)
 
-@app.route(rout14+"editl/<id>", methods=["POST"])
+@app.route(rout14+"editl/<string:id>", methods=["POST"])
 def ccst_editl(id):
     return compani14.editl(id)
 
@@ -500,7 +502,7 @@ def csvp_info():
 def csvp_listarl():
     return compani15.listl()
 
-@app.route(rout15+"list/<int:id>")
+@app.route(rout15+"list/<string:id>")
 def csvp_listar_id(id):
     return compani15.listlid(id)
 
@@ -512,7 +514,7 @@ def csvp_listar_cre1():
 def csvp_listar_cre2():
     return compani15.create2l()
 
-@app.route(rout15+"edit1/<id>")
+@app.route(rout15+"edit1/<string:id>")
 def csvp_edit1(id):
     return compani15.edit1(id)
 
@@ -534,7 +536,7 @@ def confiar_info():
 def confiar_listarl():
     return compani16.listl()
 
-@app.route(rout16+"list/<int:id>")
+@app.route(rout16+"list/<string:id>")
 def confiar_listar_id(id):
     return compani16.listlid(id)
 
@@ -546,11 +548,11 @@ def confiar_listar_cre1():
 def confiar_listar_cre2():
     return compani16.create2l()
 
-@app.route(rout16+"edit1/<id>")
+@app.route(rout16+"edit1/<string:id>")
 def confiar_edit1(id):
     return compani16.edit1(id)
 
-@app.route(rout16+"editl/<id>", methods=["POST"])
+@app.route(rout16+"editl/<string:id>", methods=["POST"])
 def confiar_editl(id):
     return compani16.editl(id)
 
@@ -567,7 +569,7 @@ def controlar_info():
 def controlar_listarl():
     return compani17.listl()
 
-@app.route(rout17+"list/<int:id>")
+@app.route(rout17+"list/<string:id>")
 def controlar_listar_id(id):
     return compani17.listlid(id)
 
@@ -579,11 +581,11 @@ def controlar_listar_cre1():
 def controlar_listar_cre2():
     return compani17.create2l()
 
-@app.route(rout17+"edit1/<id>")
+@app.route(rout17+"edit1/<string:id>")
 def controlar_edit1(id):
     return compani17.edit1(id)
 
-@app.route(rout17+"editl/<id>", methods=["POST"])
+@app.route(rout17+"editl/<string:id>", methods=["POST"])
 def controlar_editl(id):
     return compani17.editl(id)
 
@@ -600,7 +602,7 @@ def cooptra_info():
 def cooptra_listarl():
     return compani18.listl()
 
-@app.route(rout18+"list/<int:id>")
+@app.route(rout18+"list/<string:id>")
 def cooptra_listar_id(id):
     return compani18.listlid(id)
 
@@ -612,11 +614,11 @@ def cooptra_listar_cre1():
 def cooptra_listar_cre2():
     return compani18.create2l()
 
-@app.route(rout18+"edit1/<id>")
+@app.route(rout18+"edit1/<string:id>")
 def cooptra_edit1(id):
     return compani18.edit1(id)
 
-@app.route(rout18+"editl/<id>", methods=["POST"])
+@app.route(rout18+"editl/<string:id>", methods=["POST"])
 def cooptra_editl(id):
     return compani18.editl(id)
 
@@ -633,7 +635,7 @@ def coopl_info():
 def coopl_listarl():
     return compani19.listl()
 
-@app.route(rout19+"list/<int:id>")
+@app.route(rout19+"list/<string:id>")
 def coopl_listar_id(id):
     return compani19.listlid(id)
 
@@ -645,11 +647,11 @@ def coopl_listar_cre1():
 def coopl_listar_cre2():
     return compani19.create2l()
 
-@app.route(rout19+"edit1/<id>")
+@app.route(rout19+"edit1/<string:id>")
 def coopl_edit1(id):
     return compani19.edit1(id)
 
-@app.route(rout19+"editl/<id>", methods=["POST"])
+@app.route(rout19+"editl/<string:id>", methods=["POST"])
 def coopl_editl(id):
     return compani19.editl(id)
 
@@ -666,7 +668,7 @@ def coovi_info():
 def coovi_listarl():
     return compani20.listl()
 
-@app.route(rout20+"list/<int:id>")
+@app.route(rout20+"list/<string:id>")
 def coovi_listar_id(id):
     return compani20.listlid(id)
 
@@ -678,11 +680,11 @@ def coovi_listar_cre1():
 def coovi_listar_cre2():
     return compani20.create2l()
 
-@app.route(rout20+"edit1/<id>")
+@app.route(rout20+"edit1/<string:id>")
 def coovi_edit1(id):
     return compani20.edit1(id)
 
-@app.route(rout20+"editl/<id>", methods=["POST"])
+@app.route(rout20+"editl/<string:id>", methods=["POST"])
 def coovi_editl(id):
     return compani20.editl(id)
 
@@ -699,7 +701,7 @@ def coservi_info():
 def coservi_listarl():
     return compani21.listl()
 
-@app.route(rout21+"list/<int:id>")
+@app.route(rout21+"list/<string:id>")
 def coservi_listar_id(id):
     return compani21.listlid(id)
 
@@ -711,11 +713,11 @@ def coservi_listar_cre1():
 def coservi_listar_cre2():
     return compani21.create2l()
 
-@app.route(rout21+"edit1/<id>")
+@app.route(rout21+"edit1/<string:id>")
 def coservi_edit1(id):
     return compani21.edit1(id)
 
-@app.route(rout21+"editl/<id>", methods=["POST"])
+@app.route(rout21+"editl/<string:id>", methods=["POST"])
 def coservi_editl(id):
     return compani21.editl(id)
 
@@ -732,7 +734,7 @@ def cospp_info():
 def cospp_listarl():
     return compani22.listl()
 
-@app.route(rout22+"list/<int:id>")
+@app.route(rout22+"list/<string:id>")
 def cospp_listar_id(id):
     return compani22.listlid(id)
 
@@ -744,11 +746,11 @@ def cospp_listar_cre1():
 def cospp_listar_cre2():
     return compani22.create2l()
 
-@app.route(rout22+"edit1/<id>")
+@app.route(rout22+"edit1/<string:id>")
 def cospp_edit1(id):
     return compani22.edit1(id)
 
-@app.route(rout22+"editl/<id>", methods=["POST"])
+@app.route(rout22+"editl/<string:id>", methods=["POST"])
 def cospp_editl(id):
     return compani22.editl(id)
 
@@ -765,7 +767,7 @@ def cosmovig_info():
 def cosmovig_listarl():
     return compani23.listl()
 
-@app.route(rout23+"list/<int:id>")
+@app.route(rout23+"list/<string:id>")
 def cosmovig_listar_id(id):
     return compani23.listlid(id)
 
@@ -777,11 +779,11 @@ def cosmovig_listar_cre1():
 def cosmovig_listar_cre2():
     return compani23.create2l()
 
-@app.route(rout23+"edit1/<id>")
+@app.route(rout23+"edit1/<string:id>")
 def cosmovig_edit1(id):
     return compani23.edit1(id)
 
-@app.route(rout23+"editl/<id>", methods=["POST"])
+@app.route(rout23+"editl/<string:id>", methods=["POST"])
 def cosmovig_editl(id):
     return compani23.editl(id)
 
@@ -799,7 +801,7 @@ def cuidar_info():
 def cuidar_listarl():
     return compani24.listl()
 
-@app.route(rout24+"list/<int:id>")
+@app.route(rout24+"list/<string:id>")
 def cuidar_listar_id(id):
     return compani24.listlid(id)
 
@@ -811,11 +813,11 @@ def cuidar_listar_cre1():
 def cuidar_listar_cre2():
     return compani24.create2l()
 
-@app.route(rout24+"edit1/<id>")
+@app.route(rout24+"edit1/<string:id>")
 def cuidar_edit1(id):
     return compani24.edit1(id)
 
-@app.route(rout24+"editl/<id>", methods=["POST"])
+@app.route(rout24+"editl/<string:id>", methods=["POST"])
 def cuidar_editl(id):
     return compani24.editl(id)
 
@@ -832,7 +834,7 @@ def deas_info():
 def deas_listarl():
     return compani25.listl()
 
-@app.route(rout25+"list/<int:id>")
+@app.route(rout25+"list/<string:id>")
 def deas_listar_id(id):
     return compani25.listlid(id)
 
@@ -844,11 +846,11 @@ def deas_listar_cre1():
 def deas_listar_cre2():
     return compani25.create2l()
 
-@app.route(rout25+"edit1/<id>")
+@app.route(rout25+"edit1/<string:id>")
 def deas_edit1(id):
     return compani25.edit1(id)
 
-@app.route(rout25+"editl/<id>", methods=["POST"])
+@app.route(rout25+"editl/<string:id>", methods=["POST"])
 def deas_editl(id):
     return compani25.editl(id)
 
@@ -867,7 +869,7 @@ def efective_info():
 def efective_listarl():
     return compani26.listl()
 
-@app.route(rout26+"list/<int:id>")
+@app.route(rout26+"list/<string:id>")
 def efective_listar_id(id):
     return compani26.listlid(id)
 
@@ -879,11 +881,11 @@ def efective_listar_cre1():
 def efective_listar_cre2():
     return compani26.create2l()
 
-@app.route(rout26+"edit1/<id>")
+@app.route(rout26+"edit1/<string:id>")
 def efective_edit1(id):
     return compani26.edit1(id)
 
-@app.route(rout26+"editl/<id>", methods=["POST"])
+@app.route(rout26+"editl/<string:id>", methods=["POST"])
 def efective_editl(id):
     return compani26.editl(id)
 
@@ -900,7 +902,7 @@ def electro_info():
 def electro_listarl():
     return compani27.listl()
 
-@app.route(rout27+"list/<int:id>")
+@app.route(rout27+"list/<string:id>")
 def electro_listar_id(id):
     return compani27.listlid(id)
 
@@ -912,11 +914,11 @@ def electro_listar_cre1():
 def electro_listar_cre2():
     return compani27.create2l()
 
-@app.route(rout27+"edit1/<id>")
+@app.route(rout27+"edit1/<string:id>")
 def electro_edit1(id):
     return compani27.edit1(id)
 
-@app.route(rout27+"editl/<id>", methods=["POST"])
+@app.route(rout27+"editl/<string:id>", methods=["POST"])
 def electro_editl(id):
     return compani27.editl(id)
 
@@ -933,7 +935,7 @@ def extra_info():
 def extra_listarl():
     return compani28.listl()
 
-@app.route(rout28+"list/<int:id>")
+@app.route(rout28+"list/<string:id>")
 def extra_listar_id(id):
     return compani28.listlid(id)
 
@@ -945,11 +947,11 @@ def extra_listar_cre1():
 def extra_listar_cre2():
     return compani28.create2l()
 
-@app.route(rout28+"edit1/<id>")
+@app.route(rout28+"edit1/<string:id>")
 def extra_edit1(id):
     return compani28.edit1(id)
 
-@app.route(rout28+"editl/<id>", methods=["POST"])
+@app.route(rout28+"editl/<string:id>", methods=["POST"])
 def extra_editl(id):
     return compani28.editl(id)
 
@@ -966,7 +968,7 @@ def falcon_info():
 def falcon_listarl():
     return compani29.listl()
 
-@app.route(rout29+"list/<int:id>")
+@app.route(rout29+"list/<string:id>")
 def falcon_listar_id(id):
     return compani29.listlid(id)
 
@@ -978,11 +980,11 @@ def falcon_listar_cre1():
 def falcon_listar_cre2():
     return compani29.create2l()
 
-@app.route(rout29+"edit1/<id>")
+@app.route(rout29+"edit1/<string:id>")
 def falcon_edit1(id):
     return compani29.edit1(id)
 
-@app.route(rout29+"editl/<id>", methods=["POST"])
+@app.route(rout29+"editl/<string:id>", methods=["POST"])
 def falcon_editl(id):
     return compani29.editl(id)
 
@@ -999,7 +1001,7 @@ def fidelity_info():
 def fidelity_listarl():
     return compani30.listl()
 
-@app.route(rout30+"list/<int:id>")
+@app.route(rout30+"list/<string:id>")
 def fidelity_listar_id(id):
     return compani30.listlid(id)
 
@@ -1011,11 +1013,11 @@ def fidelity_listar_cre1():
 def fidelity_listar_cre2():
     return compani30.create2l()
 
-@app.route(rout30+"edit1/<id>")
+@app.route(rout30+"edit1/<string:id>")
 def fidelity_edit1(id):
     return compani30.edit1(id)
 
-@app.route(rout30+"editl/<id>", methods=["POST"])
+@app.route(rout30+"editl/<string:id>", methods=["POST"])
 def fidelity_editl(id):
     return compani30.editl(id)
 
@@ -1032,7 +1034,7 @@ def fortox_info():
 def fortox_listarl():
     return compani31.listl()
 
-@app.route(rout31+"list/<int:id>")
+@app.route(rout31+"list/<string:id>")
 def fortox_listar_id(id):
     return compani31.listlid(id)
 
@@ -1044,11 +1046,11 @@ def fortox_listar_cre1():
 def fortox_listar_cre2():
     return compani31.create2l()
 
-@app.route(rout31+"edit1/<id>")
+@app.route(rout31+"edit1/<string:id>")
 def fortox_edit1(id):
     return compani31.edit1(id)
 
-@app.route(rout31+"editl/<id>", methods=["POST"])
+@app.route(rout31+"editl/<string:id>", methods=["POST"])
 def fortox_editl(id):
     return compani31.editl(id)
 
@@ -1066,7 +1068,7 @@ def gsssol_info():
 def gsssol_listarl():
     return compani32.listl()
 
-@app.route(rout32+"list/<int:id>")
+@app.route(rout32+"list/<string:id>")
 def gsssol_listar_id(id):
     return compani32.listlid(id)
 
@@ -1078,11 +1080,11 @@ def gsssol_listar_cre1():
 def gsssol_listar_cre2():
     return compani32.create2l()
 
-@app.route(rout32+"edit1/<id>")
+@app.route(rout32+"edit1/<string:id>")
 def gsssol_edit1(id):
     return compani32.edit1(id)
 
-@app.route(rout32+"editl/<id>", methods=["POST"])
+@app.route(rout32+"editl/<string:id>", methods=["POST"])
 def gsssol_editl(id):
     return compani32.editl(id)
 
@@ -1099,7 +1101,7 @@ def gendar_info():
 def gendar_listarl():
     return compani33.listl()
 
-@app.route(rout33+"list/<int:id>")
+@app.route(rout33+"list/<string:id>")
 def gendar_listar_id(id):
     return compani33.listlid(id)
 
@@ -1111,11 +1113,11 @@ def gendar_listar_cre1():
 def gendar_listar_cre2():
     return compani33.create2l()
 
-@app.route(rout33+"edit1/<id>")
+@app.route(rout33+"edit1/<string:id>")
 def gendar_edit1(id):
     return compani33.edit1(id)
 
-@app.route(rout33+"editl/<id>", methods=["POST"])
+@app.route(rout33+"editl/<string:id>", methods=["POST"])
 def gendar_editl(id):
     return compani33.editl(id)
 
@@ -1132,7 +1134,7 @@ def holding_info():
 def holding_listarl():
     return compani34.listl()
 
-@app.route(rout34+"list/<int:id>")
+@app.route(rout34+"list/<string:id>")
 def holding_listar_id(id):
     return compani34.listlid(id)
 
@@ -1144,11 +1146,11 @@ def holding_listar_cre1():
 def holding_listar_cre2():
     return compani34.create2l()
 
-@app.route(rout34+"edit1/<id>")
+@app.route(rout34+"edit1/<string:id>")
 def holding_edit1(id):
     return compani34.edit1(id)
 
-@app.route(rout34+"editl/<id>", methods=["POST"])
+@app.route(rout34+"editl/<string:id>", methods=["POST"])
 def holding_editl(id):
     return compani34.editl(id)
 
@@ -1165,7 +1167,7 @@ def improcan_info():
 def improcan_listarl():
     return compani35.listl()
 
-@app.route(rout35+"list/<int:id>")
+@app.route(rout35+"list/<string:id>")
 def improcan_listar_id(id):
     return compani35.listlid(id)
 
@@ -1177,11 +1179,11 @@ def improcan_listar_cre1():
 def improcan_listar_cre2():
     return compani35.create2l()
 
-@app.route(rout35+"edit1/<id>")
+@app.route(rout35+"edit1/<string:id>")
 def improcan_edit1(id):
     return compani35.edit1(id)
 
-@app.route(rout35+"editl/<id>", methods=["POST"])
+@app.route(rout35+"editl/<string:id>", methods=["POST"])
 def improcan_editl(id):
     return compani35.editl(id)
 
@@ -1198,7 +1200,7 @@ def keystell_info():
 def keystell_listarl():
     return compani36.listl()
 
-@app.route(rout36+"list/<int:id>")
+@app.route(rout36+"list/<string:id>")
 def keystell_listar_id(id):
     return compani36.listlid(id)
 
@@ -1210,11 +1212,11 @@ def keystell_listar_cre1():
 def keystell_listar_cre2():
     return compani36.create2l()
 
-@app.route(rout36+"edit1/<id>")
+@app.route(rout36+"edit1/<string:id>")
 def keystell_edit1(id):
     return compani36.edit1(id)
 
-@app.route(rout36+"editl/<id>", methods=["POST"])
+@app.route(rout36+"editl/<string:id>", methods=["POST"])
 def keystell_editl(id):
     return compani36.editl(id)
 
@@ -1231,7 +1233,7 @@ def latamsec_info():
 def latamsec_listarl():
     return compani37.listl()
 
-@app.route(rout37+"list/<int:id>")
+@app.route(rout37+"list/<string:id>")
 def latamsec_listar_id(id):
     return compani37.listlid(id)
 
@@ -1243,11 +1245,11 @@ def latamsec_listar_cre1():
 def latamsec_listar_cre2():
     return compani37.create2l()
 
-@app.route(rout37+"edit1/<id>")
+@app.route(rout37+"edit1/<string:id>")
 def latamsec_edit1(id):
     return compani37.edit1(id)
 
-@app.route(rout37+"editl/<id>", methods=["POST"])
+@app.route(rout37+"editl/<string:id>", methods=["POST"])
 def latamsec_editl(id):
     return compani37.editl(id)
 
@@ -1265,7 +1267,7 @@ def lir_info():
 def lir_listarl():
     return compani.listl()
 
-@app.route(rout+"list/<int:id>")
+@app.route(rout+"list/<string:id>")
 def lir_listar_id(id):
     return compani.listlid(id)
 
@@ -1277,11 +1279,11 @@ def lir_listar_cre1():
 def lir_listar_cre2():
     return compani.create2l()
 
-@app.route(rout+"edit1/<id>")
+@app.route(rout+"edit1/<string:id>")
 def lir_edit1(id):
     return compani.edit1(id)
 
-@app.route(rout+"editl/<id>", methods=["POST"])
+@app.route(rout+"editl/<string:id>", methods=["POST"])
 def lir_editl(id):
     return compani.editl(id)
 
@@ -1299,7 +1301,7 @@ def magnus_info():
 def magnus_listarl():
     return compani39.listl()
 
-@app.route(rout39+"list/<int:id>")
+@app.route(rout39+"list/<string:id>")
 def magnus_listar_id(id):
     return compani39.listlid(id)
 
@@ -1311,11 +1313,11 @@ def magnus_listar_cre1():
 def magnus_listar_cre2():
     return compani39.create2l()
 
-@app.route(rout39+"edit1/<id>")
+@app.route(rout39+"edit1/<string:id>")
 def megnus_edit1(id):
     return compani39.edit1(id)
 
-@app.route(rout39+"editl/<id>", methods=["POST"])
+@app.route(rout39+"editl/<string:id>", methods=["POST"])
 def megnus_editl(id):
     return compani39.editl(id)
 
@@ -1332,7 +1334,7 @@ def mastin_info():
 def mastin_listarl():
     return compani40.listl()
 
-@app.route(rout40+"list/<int:id>")
+@app.route(rout40+"list/<string:id>")
 def mastin_listar_id(id):
     return compani40.listlid(id)
 
@@ -1344,11 +1346,11 @@ def mastin_listar_cre1():
 def mastin_listar_cre2():
     return compani40.create2l()
 
-@app.route(rout40+"edit1/<id>")
+@app.route(rout40+"edit1/<string:id>")
 def mastin_edit1(id):
     return compani40.edit1(id)
 
-@app.route(rout40+"editl/<id>", methods=["POST"])
+@app.route(rout40+"editl/<string:id>", methods=["POST"])
 def mastin_editl(id):
     return compani40.editl(id)
 
@@ -1365,7 +1367,7 @@ def mseg_info():
 def mseg_listarl():
     return compani41.listl()
 
-@app.route(rout41+"list/<int:id>")
+@app.route(rout41+"list/<string:id>")
 def mseg_listar_id(id):
     return compani41.listlid(id)
 
@@ -1377,11 +1379,11 @@ def mseg_listar_cre1():
 def mseg_listar_cre2():
     return compani41.create2l()
 
-@app.route(rout41+"edit1/<id>")
+@app.route(rout41+"edit1/<string:id>")
 def mseg_edit1(id):
     return compani41.edit1(id)
 
-@app.route(rout41+"editl/<id>", methods=["POST"])
+@app.route(rout41+"editl/<string:id>", methods=["POST"])
 def mseg_editl(id):
     return compani41.editl(id)
 
@@ -1398,7 +1400,7 @@ def napoles_info():
 def napoles_listarl():
     return compani42.listl()
 
-@app.route(rout42+"list/<int:id>")
+@app.route(rout42+"list/<string:id>")
 def napoles_listar_id(id):
     return compani42.listlid(id)
 
@@ -1410,11 +1412,11 @@ def napoles_listar_cre1():
 def napoles_listar_cre2():
     return compani42.create2l()
 
-@app.route(rout42+"edit1/<id>")
+@app.route(rout42+"edit1/<string:id>")
 def napoles_edit1(id):
     return compani42.edit1(id)
 
-@app.route(rout42+"editl/<id>", methods=["POST"])
+@app.route(rout42+"editl/<string:id>", methods=["POST"])
 def napoles_editl(id):
     return compani42.editl(id)
 
@@ -1432,7 +1434,7 @@ def naser_info():
 def naser_listarl():
     return compani43.listl()
 
-@app.route(rout43+"list/<int:id>")
+@app.route(rout43+"list/<string:id>")
 def naser_listar_id(id):
     return compani43.listlid(id)
 
@@ -1444,11 +1446,11 @@ def naser_listar_cre1():
 def naser_listar_cre2():
     return compani43.create2l()
 
-@app.route(rout43+"edit1/<id>")
+@app.route(rout43+"edit1/<string:id>")
 def naser_edit1(id):
     return compani43.edit1(id)
 
-@app.route(rout43+"editl/<id>", methods=["POST"])
+@app.route(rout43+"editl/<string:id>", methods=["POST"])
 def naser_editl(id):
     return compani43.editl(id)
 
@@ -1465,7 +1467,7 @@ def opeadin_info():
 def opeadin_listarl():
     return compani44.listl()
 
-@app.route(rout44+"list/<int:id>")
+@app.route(rout44+"list/<string:id>")
 def opeadin_listar_id(id):
     return compani44.listlid(id)
 
@@ -1477,11 +1479,11 @@ def opeadin_listar_cre1():
 def opeadin_listar_cre2():
     return compani44.create2l()
 
-@app.route(rout44+"edit1/<id>")
+@app.route(rout44+"edit1/<string:id>")
 def opeadin_edit1(id):
     return compani44.edit1(id)
 
-@app.route(rout44+"editl/<id>", methods=["POST"])
+@app.route(rout44+"editl/<string:id>", methods=["POST"])
 def opeadin_editl(id):
     return compani44.editl(id)
 
@@ -1498,7 +1500,7 @@ def proseguir_info():
 def proseguir_listarl():
     return compani45.listl()
 
-@app.route(rout45+"list/<int:id>")
+@app.route(rout45+"list/<string:id>")
 def proseguir_listar_id(id):
     return compani45.listlid(id)
 
@@ -1510,11 +1512,11 @@ def proseguir_listar_cre1():
 def proseguir_listar_cre2():
     return compani45.create2l()
 
-@app.route(rout45+"edit1/<id>")
+@app.route(rout45+"edit1/<string:id>")
 def proseguir_edit1(id):
     return compani45.edit1(id)
 
-@app.route(rout45+"editl/<id>", methods=["POST"])
+@app.route(rout45+"editl/<string:id>", methods=["POST"])
 def proseguir_editl(id):
     return compani45.editl(id)
 
@@ -1531,7 +1533,7 @@ def provigys_info():
 def provigys_listarl():
     return compani46.listl()
 
-@app.route(rout46+"list/<int:id>")
+@app.route(rout46+"list/<string:id>")
 def provigys_listar_id(id):
     return compani46.listlid(id)
 
@@ -1543,11 +1545,11 @@ def provigys_listar_cre1():
 def provigys_listar_cre2():
     return compani46.create2l()
 
-@app.route(rout46+"edit1/<id>")
+@app.route(rout46+"edit1/<string:id>")
 def provigys_edit1(id):
     return compani46.edit1(id)
 
-@app.route(rout46+"editl/<id>", methods=["POST"])
+@app.route(rout46+"editl/<string:id>", methods=["POST"])
 def provigys_editl(id):
     return compani46.editl(id)
 
@@ -1564,7 +1566,7 @@ def proyvigtu_info():
 def proyvigtu_listarl():
     return compani47.listl()
 
-@app.route(rout47+"list/<int:id>")
+@app.route(rout47+"list/<string:id>")
 def proyvigtu_listar_id(id):
     return compani47.listlid(id)
 
@@ -1576,11 +1578,11 @@ def proyvigtu_listar_cre1():
 def proyvigtu_listar_cre2():
     return compani47.create2l()
 
-@app.route(rout47+"edit1/<id>")
+@app.route(rout47+"edit1/<string:id>")
 def proyvigtu_edit1(id):
     return compani47.edit1(id)
 
-@app.route(rout47+"editl/<id>", methods=["POST"])
+@app.route(rout47+"editl/<string:id>", methods=["POST"])
 def proyvigtu_editl(id):
     return compani47.editl(id)
 
@@ -1597,7 +1599,7 @@ def risksol_info():
 def risksol_listarl():
     return compani48.listl()
 
-@app.route(rout48+"list/<int:id>")
+@app.route(rout48+"list/<string:id>")
 def risksol_listar_id(id):
     return compani48.listlid(id)
 
@@ -1609,11 +1611,11 @@ def risksol_listar_cre1():
 def risksol_listar_cre2():
     return compani48.create2l()
 
-@app.route(rout48+"edit1/<id>")
+@app.route(rout48+"edit1/<string:id>")
 def risksol_edit1(id):
     return compani48.edit1(id)
 
-@app.route(rout48+"editl/<id>", methods=["POST"])
+@app.route(rout48+"editl/<string:id>", methods=["POST"])
 def risksol_editl(id):
     return compani48.editl(id)
 
@@ -1630,7 +1632,7 @@ def segapolo_info():
 def segapolo_listarl():
     return compani49.listl()
 
-@app.route(rout49+"list/<int:id>")
+@app.route(rout49+"list/<string:id>")
 def segapolo_listar_id(id):
     return compani49.listlid(id)
 
@@ -1642,11 +1644,11 @@ def segapolo_listar_cre1():
 def segapolo_listar_cre2():
     return compani49.create2l()
 
-@app.route(rout49+"edit1/<id>")
+@app.route(rout49+"edit1/<string:id>")
 def segapolo_edit1(id):
     return compani49.edit1(id)
 
-@app.route(rout49+"editl/<id>", methods=["POST"])
+@app.route(rout49+"editl/<string:id>", methods=["POST"])
 def segapolo_editl(id):
     return compani49.editl(id)
 
@@ -1663,7 +1665,7 @@ def segatlas_info():
 def segatlas_listarl():
     return compani50.listl()
 
-@app.route(rout50+"list/<int:id>")
+@app.route(rout50+"list/<string:id>")
 def segatlas_listar_id(id):
     return compani50.listlid(id)
 
@@ -1675,11 +1677,11 @@ def segatlas_listar_cre1():
 def segatlas_listar_cre2():
     return compani50.create2l()
 
-@app.route(rout50+"edit1/<id>")
+@app.route(rout50+"edit1/<string:id>")
 def segatlas_edit1(id):
     return compani50.edit1(id)
 
-@app.route(rout50+"editl/<id>", methods=["POST"])
+@app.route(rout50+"editl/<string:id>", methods=["POST"])
 def segatlas_editl(id):
     return compani50.editl(id)
 
@@ -1696,7 +1698,7 @@ def segcan_info():
 def segcan_listarl():
     return compani51.listl()
 
-@app.route(rout51+"list/<int:id>")
+@app.route(rout51+"list/<string:id>")
 def segcan_listar_id(id):
     return compani51.listlid(id)
 
@@ -1708,11 +1710,11 @@ def segcan_listar_cre1():
 def segcan_listar_cre2():
     return compani51.create2l()
 
-@app.route(rout51+"edit1/<id>")
+@app.route(rout51+"edit1/<string:id>")
 def segcan_edit1(id):
     return compani51.edit1(id)
 
-@app.route(rout51+"editl/<id>", methods=["POST"])
+@app.route(rout51+"editl/<string:id>", methods=["POST"])
 def segcan_editl(id):
     return compani51.editl(id)
 
@@ -1730,7 +1732,7 @@ def segcanina_info():
 def segcanina_listarl():
     return compani52.listl()
 
-@app.route(rout52+"list/<int:id>")
+@app.route(rout52+"list/<string:id>")
 def segcanina_listar_id(id):
     return compani52.listlid(id)
 
@@ -1742,11 +1744,11 @@ def segcanina_listar_cre1():
 def segcanina_listar_cre2():
     return compani52.create2l()
 
-@app.route(rout52+"edit1/<id>")
+@app.route(rout52+"edit1/<string:id>")
 def segcanina_edit1(id):
     return compani52.edit1(id)
 
-@app.route(rout52+"editl/<id>", methods=["POST"])
+@app.route(rout52+"editl/<string:id>", methods=["POST"])
 def segcanina_editl(id):
     return compani52.editl(id)
 
@@ -1763,7 +1765,7 @@ def segcentral_info():
 def segcentral_listarl():
     return compani53.listl()
 
-@app.route(rout53+"list/<int:id>")
+@app.route(rout53+"list/<string:id>")
 def segcentral_listar_id(id):
     return compani53.listlid(id)
 
@@ -1775,11 +1777,11 @@ def segcentral_listar_cre1():
 def segcentral_listar_cre2():
     return compani53.create2l()
 
-@app.route(rout53+"edit1/<id>")
+@app.route(rout53+"edit1/<string:id>")
 def segcentral_edit1(id):
     return compani53.edit1(id)
 
-@app.route(rout53+"editl/<id>", methods=["POST"])
+@app.route(rout53+"editl/<string:id>", methods=["POST"])
 def segcentral_editl(id):
     return compani53.editl(id)
 
@@ -1797,7 +1799,7 @@ def segdeca_info():
 def segdeca_listarl():
     return compani54.listl()
 
-@app.route(rout54+"list/<int:id>")
+@app.route(rout54+"list/<string:id>")
 def segdeca_listar_id(id):
     return compani54.listlid(id)
 
@@ -1809,11 +1811,11 @@ def segdeca_listar_cre1():
 def segdeca_listar_cre2():
     return compani54.create2l()
 
-@app.route(rout54+"edit1/<id>")
+@app.route(rout54+"edit1/<string:id>")
 def segdeca_edit1(id):
     return compani54.edit1(id)
 
-@app.route(rout54+"editl/<id>", methods=["POST"])
+@app.route(rout54+"editl/<string:id>", methods=["POST"])
 def segdeca_editl(id):
     return compani54.editl(id)
 
@@ -1831,7 +1833,7 @@ def segdig_info():
 def segdig_listarl():
     return compani55.listl()
 
-@app.route(rout55+"list/<int:id>")
+@app.route(rout55+"list/<string:id>")
 def segdig_listar_id(id):
     return compani55.listlid(id)
 
@@ -1843,11 +1845,11 @@ def segdig_listar_cre1():
 def segdig_listar_cre2():
     return compani55.create2l()
 
-@app.route(rout55+"edit1/<id>")
+@app.route(rout55+"edit1/<string:id>")
 def segdig_edit1(id):
     return compani55.edit1(id)
 
-@app.route(rout55+"editl/<id>", methods=["POST"])
+@app.route(rout55+"editl/<string:id>", methods=["POST"])
 def segdig_editl(id):
     return compani55.editl(id)
 
@@ -1864,7 +1866,7 @@ def segelir_info():
 def segelir_listarl():
     return compani56.listl()
 
-@app.route(rout56+"list/<int:id>")
+@app.route(rout56+"list/<string:id>")
 def segelir_listar_id(id):
     return compani56.listlid(id)
 
@@ -1876,11 +1878,11 @@ def segelir_listar_cre1():
 def segelir_listar_cre2():
     return compani56.create2l()
 
-@app.route(rout56+"edit1/<id>")
+@app.route(rout56+"edit1/<string:id>")
 def segelir_edit1(id):
     return compani56.edit1(id)
 
-@app.route(rout56+"editl/<id>", methods=["POST"])
+@app.route(rout56+"editl/<string:id>", methods=["POST"])
 def segelir_editl(id):
     return compani56.editl(id)
 
@@ -1897,7 +1899,7 @@ def segexplo_info():
 def segexplo_listarl():
     return compani57.listl()
 
-@app.route(rout57+"list/<int:id>")
+@app.route(rout57+"list/<string:id>")
 def segexplo_listar_id(id):
     return compani57.listlid(id)
 
@@ -1909,11 +1911,11 @@ def segexplo_listar_cre1():
 def segexplo_listar_cre2():
     return compani57.create2l()
 
-@app.route(rout57+"edit1/<id>")
+@app.route(rout57+"edit1/<string:id>")
 def segexplo_edit1(id):
     return compani57.edit1(id)
 
-@app.route(rout57+"editl/<id>", methods=["POST"])
+@app.route(rout57+"editl/<string:id>", methods=["POST"])
 def segexplo_editl(id):
     return compani57.editl(id)
 
@@ -1930,7 +1932,7 @@ def seggran_info():
 def seggran_listarl():
     return compani58.listl()
 
-@app.route(rout58+"list/<int:id>")
+@app.route(rout58+"list/<string:id>")
 def seggran_listar_id(id):
     return compani58.listlid(id)
 
@@ -1942,11 +1944,11 @@ def seggran_listar_cre1():
 def seggran_listar_cre2():
     return compani58.create2l()
 
-@app.route(rout58+"edit1/<id>")
+@app.route(rout58+"edit1/<string:id>")
 def seggran_edit1(id):
     return compani58.edit1(id)
 
-@app.route(rout58+"editl/<id>", methods=["POST"])
+@app.route(rout58+"editl/<string:id>", methods=["POST"])
 def seggran_editl(id):
     return compani58.editl(id)
 
@@ -1963,7 +1965,7 @@ def seghorus_info():
 def seghorus_listarl():
     return compani59.listl()
 
-@app.route(rout59+"list/<int:id>")
+@app.route(rout59+"list/<string:id>")
 def seghorus_listar_id(id):
     return compani59.listlid(id)
 
@@ -1975,11 +1977,11 @@ def seghorus_listar_cre1():
 def seghorus_listar_cre2():
     return compani59.create2l()
 
-@app.route(rout59+"edit1/<id>")
+@app.route(rout59+"edit1/<string:id>")
 def seghorus_edit1(id):
     return compani59.edit1(id)
 
-@app.route(rout59+"editl/<id>", methods=["POST"])
+@app.route(rout59+"editl/<string:id>", methods=["POST"])
 def seghorus_editl(id):
     return compani59.editl(id)
 
@@ -1996,7 +1998,7 @@ def segvirrey_info():
 def segvirrey_listarl():
     return compani60.listl()
 
-@app.route(rout60+"list/<int:id>")
+@app.route(rout60+"list/<string:id>")
 def segvirrey_listar_id(id):
     return compani60.listlid(id)
 
@@ -2008,11 +2010,11 @@ def segvirrey_listar_cre1():
 def segvirrey_listar_cre2():
     return compani60.create2l()
 
-@app.route(rout60+"edit1/<id>")
+@app.route(rout60+"edit1/<string:id>")
 def segvirrey_edit1(id):
     return compani60.edit1(id)
 
-@app.route(rout60+"editl/<id>", methods=["POST"])
+@app.route(rout60+"editl/<string:id>", methods=["POST"])
 def segvirrey_editl(id):
     return compani60.editl(id)
 
@@ -2029,7 +2031,7 @@ def segmod_info():
 def segmod_listarl():
     return compani61.listl()
 
-@app.route(rout61+"list/<int:id>")
+@app.route(rout61+"list/<string:id>")
 def segmod_listar_id(id):
     return compani61.listlid(id)
 
@@ -2041,11 +2043,11 @@ def segmod_listar_cre1():
 def segmod_listar_cre2():
     return compani61.create2l()
 
-@app.route(rout61+"edit1/<id>")
+@app.route(rout61+"edit1/<string:id>")
 def segmod_edit1(id):
     return compani61.edit1(id)
 
-@app.route(rout61+"editl/<id>", methods=["POST"])
+@app.route(rout61+"editl/<string:id>", methods=["POST"])
 def segmod_editl(id):
     return compani61.editl(id)
 
@@ -2062,7 +2064,7 @@ def segmon_info():
 def segmon_listarl():
     return compani62.listl()
 
-@app.route(rout62+"list/<int:id>")
+@app.route(rout62+"list/<string:id>")
 def segmon_listar_id(id):
     return compani62.listlid(id)
 
@@ -2074,11 +2076,11 @@ def segmon_listar_cre1():
 def segmon_listar_cre2():
     return compani62.create2l()
 
-@app.route(rout62+"edit1/<id>")
+@app.route(rout62+"edit1/<string:id>")
 def segmon_edit1(id):
     return compani62.edit1(id)
 
-@app.route(rout62+"editl/<id>", methods=["POST"])
+@app.route(rout62+"editl/<string:id>", methods=["POST"])
 def segmon_editl(id):
     return compani62.editl(id)
 
@@ -2095,7 +2097,7 @@ def segnap_info():
 def segnap_listarl():
     return compani63.listl()
 
-@app.route(rout63+"list/<int:id>")
+@app.route(rout63+"list/<string:id>")
 def segnap_listar_id(id):
     return compani63.listlid(id)
 
@@ -2107,11 +2109,11 @@ def segnap_listar_cre1():
 def segnap_listar_cre2():
     return compani63.create2l()
 
-@app.route(rout63+"edit1/<id>")
+@app.route(rout63+"edit1/<string:id>")
 def segnap_edit1(id):
     return compani63.edit1(id)
 
-@app.route(rout63+"editl/<id>", methods=["POST"])
+@app.route(rout63+"editl/<string:id>", methods=["POST"])
 def segnap_editl(id):
     return compani63.editl(id)
 
@@ -2128,7 +2130,7 @@ def segori_info():
 def segori_listarl():
     return compani64.listl()
 
-@app.route(rout64+"list/<int:id>")
+@app.route(rout64+"list/<string:id>")
 def segori_listar_id(id):
     return compani64.listlid(id)
 
@@ -2140,11 +2142,11 @@ def segori_listar_cre1():
 def segori_listar_cre2():
     return compani64.create2l()
 
-@app.route(rout64+"edit1/<id>")
+@app.route(rout64+"edit1/<string:id>")
 def segori_edit1(id):
     return compani64.edit1(id)
 
-@app.route(rout64+"editl/<id>", methods=["POST"])
+@app.route(rout64+"editl/<string:id>", methods=["POST"])
 def segori_editl(id):
     return compani64.editl(id)
 
@@ -2162,7 +2164,7 @@ def segpri_info():
 def segpri_listarl():
     return compani65.listl()
 
-@app.route(rout65+"list/<int:id>")
+@app.route(rout65+"list/<string:id>")
 def segpri_listar_id(id):
     return compani65.listlid(id)
 
@@ -2174,11 +2176,11 @@ def segpri_listar_cre1():
 def segpri_listar_cre2():
     return compani65.create2l()
 
-@app.route(rout65+"edit1/<id>")
+@app.route(rout65+"edit1/<string:id>")
 def segpri_edit1(id):
     return compani65.edit1(id)
 
-@app.route(rout65+"editl/<id>", methods=["POST"])
+@app.route(rout65+"editl/<string:id>", methods=["POST"])
 def segpri_editl(id):
     return compani65.editl(id)
 
@@ -2195,7 +2197,7 @@ def segpricast_info():
 def segpricast_listarl():
     return compani66.listl()
 
-@app.route(rout66+"list/<int:id>")
+@app.route(rout66+"list/<string:id>")
 def segpricast_listar_id(id):
     return compani66.listlid(id)
 
@@ -2207,11 +2209,11 @@ def segpricast_listar_cre1():
 def segpricast_listar_cre2():
     return compani66.create2l()
 
-@app.route(rout66+"edit1/<id>")
+@app.route(rout66+"edit1/<string:id>")
 def segpricast_edit1(id):
     return compani66.edit1(id)
 
-@app.route(rout66+"editl/<id>", methods=["POST"])
+@app.route(rout66+"editl/<string:id>", methods=["POST"])
 def segpricast_editl(id):
     return compani66.editl(id)
 
@@ -2228,7 +2230,7 @@ def segtexas_info():
 def segtexas_listarl():
     return compani67.listl()
 
-@app.route(rout67+"list/<int:id>")
+@app.route(rout67+"list/<string:id>")
 def segtexas_listar_id(id):
     return compani67.listlid(id)
 
@@ -2240,11 +2242,11 @@ def segtexas_listar_cre1():
 def segtexas_listar_cre2():
     return compani67.create2l()
 
-@app.route(rout67+"edit1/<id>")
+@app.route(rout67+"edit1/<string:id>")
 def segtexas_edit1(id):
     return compani67.edit1(id)
 
-@app.route(rout67+"editl/<id>", methods=["POST"])
+@app.route(rout67+"editl/<string:id>", methods=["POST"])
 def segtexas_editl(id):
     return compani67.editl(id)
 
@@ -2261,7 +2263,7 @@ def segqapl_info():
 def segqapl_listarl():
     return compani68.listl()
 
-@app.route(rout68+"list/<int:id>")
+@app.route(rout68+"list/<string:id>")
 def segqapl_listar_id(id):
     return compani68.listlid(id)
 
@@ -2273,11 +2275,11 @@ def segqapl_listar_cre1():
 def segqapl_listar_cre2():
     return compani68.create2l()
 
-@app.route(rout68+"edit1/<id>")
+@app.route(rout68+"edit1/<string:id>")
 def segqapl_edit1(id):
     return compani68.edit1(id)
 
-@app.route(rout68+"editl/<id>", methods=["POST"])
+@app.route(rout68+"editl/<string:id>", methods=["POST"])
 def segqapl_editl(id):
     return compani68.editl(id)
 
@@ -2294,7 +2296,7 @@ def segsirius_info():
 def segsirius_listarl():
     return compani69.listl()
 
-@app.route(rout69+"list/<int:id>")
+@app.route(rout69+"list/<string:id>")
 def segsirius_listar_id(id):
     return compani69.listlid(id)
 
@@ -2306,11 +2308,11 @@ def segsirius_listar_cre1():
 def segsirius_listar_cre2():
     return compani69.create2l()
 
-@app.route(rout69+"edit1/<id>")
+@app.route(rout69+"edit1/<string:id>")
 def segsirius_edit1(id):
     return compani69.edit1(id)
 
-@app.route(rout69+"editl/<id>", methods=["POST"])
+@app.route(rout69+"editl/<string:id>", methods=["POST"])
 def segsirius_editl(id):
     return compani69.editl(id)
 
@@ -2327,7 +2329,7 @@ def segsuperl_info():
 def segsuperl_listarl():
     return compani70.listl()
 
-@app.route(rout70+"list/<int:id>")
+@app.route(rout70+"list/<string:id>")
 def segsuperl_listar_id(id):
     return compani70.listlid(id)
 
@@ -2339,11 +2341,11 @@ def segsuperl_listar_cre1():
 def segsuperl_listar_cre2():
     return compani70.create2l()
 
-@app.route(rout70+"edit1/<id>")
+@app.route(rout70+"edit1/<string:id>")
 def segsuperl_edit1(id):
     return compani70.edit1(id)
 
-@app.route(rout70+"editl/<id>", methods=["POST"])
+@app.route(rout70+"editl/<string:id>", methods=["POST"])
 def segsuperl_editl(id):
     return compani70.editl(id)
 
@@ -2360,7 +2362,7 @@ def segtrans_info():
 def segtrans_listarl():
     return compani71.listl()
 
-@app.route(rout71+"list/<int:id>")
+@app.route(rout71+"list/<string:id>")
 def segtrans_listar_id(id):
     return compani71.listlid(id)
 
@@ -2372,11 +2374,11 @@ def segtrans_listar_cre1():
 def segtrans_listar_cre2():
     return compani71.create2l()
 
-@app.route(rout71+"edit1/<id>")
+@app.route(rout71+"edit1/<string:id>")
 def segtrans_edit1(id):
     return compani71.edit1(id)
 
-@app.route(rout71+"editl/<id>", methods=["POST"])
+@app.route(rout71+"editl/<string:id>", methods=["POST"])
 def segtrans_editl(id):
     return compani71.editl(id)
 
@@ -2393,7 +2395,7 @@ def segexitocol_info():
 def segexitocol_listarl():
     return compani72.listl()
 
-@app.route(rout72+"list/<int:id>")
+@app.route(rout72+"list/<string:id>")
 def segexitocol_listar_id(id):
     return compani72.listlid(id)
 
@@ -2405,11 +2407,11 @@ def segexitocol_listar_cre1():
 def segexitocol_listar_cre2():
     return compani72.create2l()
 
-@app.route(rout72+"edit1/<id>")
+@app.route(rout72+"edit1/<string:id>")
 def segexitocol_edit1(id):
     return compani72.edit1(id)
 
-@app.route(rout72+"editl/<id>", methods=["POST"])
+@app.route(rout72+"editl/<string:id>", methods=["POST"])
 def segexitocol_editl(id):
     return compani72.editl(id)
 
@@ -2426,7 +2428,7 @@ def segservicon_info():
 def segservicon_listarl():
     return compani73.listl()
 
-@app.route(rout73+"list/<int:id>")
+@app.route(rout73+"list/<string:id>")
 def segservicon_listar_id(id):
     return compani73.listlid(id)
 
@@ -2438,11 +2440,11 @@ def segservicon_listar_cre1():
 def segservicon_listar_cre2():
     return compani73.create2l()
 
-@app.route(rout73+"edit1/<id>")
+@app.route(rout73+"edit1/<string:id>")
 def segservicon_edit1(id):
     return compani73.edit1(id)
 
-@app.route(rout73+"editl/<id>", methods=["POST"])
+@app.route(rout73+"editl/<string:id>", methods=["POST"])
 def segservicon_editl(id):
     return compani73.editl(id)
 
@@ -2459,7 +2461,7 @@ def servihorizon_info():
 def servihorizon_listarl():
     return compani74.listl()
 
-@app.route(rout74+"list/<int:id>")
+@app.route(rout74+"list/<string:id>")
 def servihorizon_listar_id(id):
     return compani74.listlid(id)
 
@@ -2471,11 +2473,11 @@ def servihorizon_listar_cre1():
 def servihorizon_listar_cre2():
     return compani74.create2l()
 
-@app.route(rout74+"edit1/<id>")
+@app.route(rout74+"edit1/<string:id>")
 def servihorizon_edit1(id):
     return compani74.edit1(id)
 
-@app.route(rout74+"editl/<id>", methods=["POST"])
+@app.route(rout74+"editl/<string:id>", methods=["POST"])
 def servihorizon_editl(id):
     return compani74.editl(id)
 
@@ -2492,7 +2494,7 @@ def sstarcol_info():
 def sstarcol_listarl():
     return compani75.listl()
 
-@app.route(rout75+"list/<int:id>")
+@app.route(rout75+"list/<string:id>")
 def sstarcol_listar_id(id):
     return compani75.listlid(id)
 
@@ -2504,11 +2506,11 @@ def sstarcol_listar_cre1():
 def sstarcol_listar_cre2():
     return compani75.create2l()
 
-@app.route(rout75+"edit1/<id>")
+@app.route(rout75+"edit1/<string:id>")
 def sstarcol_edit1(id):
     return compani75.edit1(id)
 
-@app.route(rout75+"editl/<id>", methods=["POST"])
+@app.route(rout75+"editl/<string:id>", methods=["POST"])
 def sstarcol_editl(id):
     return compani75.editl(id)
 
@@ -2525,7 +2527,7 @@ def servstarq_info():
 def servstarq_listarl():
     return compani76.listl()
 
-@app.route(rout76+"list/<int:id>")
+@app.route(rout76+"list/<string:id>")
 def servstarq_listar_id(id):
     return compani76.listlid(id)
 
@@ -2537,11 +2539,11 @@ def servstarq_listar_cre1():
 def servstarq_listar_cre2():
     return compani76.create2l()
 
-@app.route(rout76+"edit1/<id>")
+@app.route(rout76+"edit1/<string:id>")
 def servstarq_edit1(id):
     return compani76.edit1(id)
 
-@app.route(rout76+"editl/<id>", methods=["POST"])
+@app.route(rout76+"editl/<string:id>", methods=["POST"])
 def servstarq_editl(id):
     return compani76.editl(id)
 
@@ -2558,7 +2560,7 @@ def servcol_info():
 def servcol_listarl():
     return compani77.listl()
 
-@app.route(rout77+"list/<int:id>")
+@app.route(rout77+"list/<string:id>")
 def servcol_listar_id(id):
     return compani77.listlid(id)
 
@@ -2570,11 +2572,11 @@ def servcol_listar_cre1():
 def servcol_listar_cre2():
     return compani77.create2l()
 
-@app.route(rout77+"edit1/<id>")
+@app.route(rout77+"edit1/<string:id>")
 def servcol_edit1(id):
     return compani77.edit1(id)
 
-@app.route(rout77+"editl/<id>", methods=["POST"])
+@app.route(rout77+"editl/<string:id>", methods=["POST"])
 def servcol_editl(id):
     return compani77.editl(id)
 
@@ -2591,7 +2593,7 @@ def servin_info():
 def servin_listarl():
     return compani78.listl()
 
-@app.route(rout78+"list/<int:id>")
+@app.route(rout78+"list/<string:id>")
 def servin_listar_id(id):
     return compani78.listlid(id)
 
@@ -2603,11 +2605,11 @@ def servin_listar_cre1():
 def servin_listar_cre2():
     return compani78.create2l()
 
-@app.route(rout78+"edit1/<id>")
+@app.route(rout78+"edit1/<string:id>")
 def servin_edit1(id):
     return compani78.edit1(id)
 
-@app.route(rout78+"editl/<id>", methods=["POST"])
+@app.route(rout78+"editl/<string:id>", methods=["POST"])
 def servin_editl(id):
     return compani78.editl(id)
 
@@ -2624,7 +2626,7 @@ def topguard_info():
 def topguard_listarl():
     return compani79.listl()
 
-@app.route(rout79+"list/<int:id>")
+@app.route(rout79+"list/<string:id>")
 def topguard_listar_id(id):
     return compani79.listlid(id)
 
@@ -2636,11 +2638,11 @@ def topguard_listar_cre1():
 def topguard_listar_cre2():
     return compani79.create2l()
 
-@app.route(rout79+"edit1/<id>")
+@app.route(rout79+"edit1/<string:id>")
 def topguard_edit1(id):
     return compani79.edit1(id)
 
-@app.route(rout79+"editl/<id>", methods=["POST"])
+@app.route(rout79+"editl/<string:id>", methods=["POST"])
 def topguard_editl(id):
     return compani79.editl(id)
 
@@ -2657,7 +2659,7 @@ def toronto_info():
 def toronto_listarl():
     return compani80.listl()
 
-@app.route(rout80+"list/<int:id>")
+@app.route(rout80+"list/<string:id>")
 def toronto_listar_id(id):
     return compani80.listlid(id)
 
@@ -2669,11 +2671,11 @@ def toronto_listar_cre1():
 def toronto_listar_cre2():
     return compani80.create2l()
 
-@app.route(rout80+"edit1/<id>")
+@app.route(rout80+"edit1/<string:id>")
 def toronto_edit1(id):
     return compani80.edit1(id)
 
-@app.route(rout80+"editl/<id>", methods=["POST"])
+@app.route(rout80+"editl/<string:id>", methods=["POST"])
 def toronto_editl(id):
     return compani80.editl(id)
 
@@ -2690,7 +2692,7 @@ def uniontemmin_info():
 def uniontemmin_listarl():
     return compani81.listl()
 
-@app.route(rout81+"list/<int:id>")
+@app.route(rout81+"list/<string:id>")
 def uniontemmin_listar_id(id):
     return compani81.listlid(id)
 
@@ -2702,11 +2704,11 @@ def uniontemmin_listar_cre1():
 def uniontemmin_listar_cre2():
     return compani81.create2l()
 
-@app.route(rout81+"edit1/<id>")
+@app.route(rout81+"edit1/<string:id>")
 def uniontemmin_edit1(id):
     return compani81.edit1(id)
 
-@app.route(rout81+"editl/<id>", methods=["POST"])
+@app.route(rout81+"editl/<string:id>", methods=["POST"])
 def uniontemmin_editl(id):
     return compani81.editl(id)
 
@@ -2723,7 +2725,7 @@ def uniontemtrans_info():
 def uniontemtrans_listarl():
     return compani82.listl()
 
-@app.route(rout82+"list/<int:id>")
+@app.route(rout82+"list/<string:id>")
 def uniontemtrans_listar_id(id):
     return compani82.listlid(id)
 
@@ -2735,11 +2737,11 @@ def uniontemtrans_listar_cre1():
 def uniontemtrans_listar_cre2():
     return compani82.create2l()
 
-@app.route(rout82+"edit1/<id>")
+@app.route(rout82+"edit1/<string:id>")
 def uniontemtrans_edit1(id):
     return compani82.edit1(id)
 
-@app.route(rout82+"editl/<id>", methods=["POST"])
+@app.route(rout82+"editl/<string:id>", methods=["POST"])
 def uniontemtrans_editl(id):
     return compani82.editl(id)
 
@@ -2756,7 +2758,7 @@ def vigcol_info():
 def vigcol_listarl():
     return compani83.listl()
 
-@app.route(rout83+"list/<int:id>")
+@app.route(rout83+"list/<string:id>")
 def vigcol_listar_id(id):
     return compani83.listlid(id)
 
@@ -2768,11 +2770,11 @@ def vigcol_listar_cre1():
 def vigcol_listar_cre2():
     return compani83.create2l()
 
-@app.route(rout83+"edit1/<id>")
+@app.route(rout83+"edit1/<string:id>")
 def vigcol_edit1(id):
     return compani83.edit1(id)
 
-@app.route(rout83+"editl/<id>", methods=["POST"])
+@app.route(rout83+"editl/<string:id>", methods=["POST"])
 def vigcol_editl(id):
     return compani83.editl(id)
 
@@ -2789,7 +2791,7 @@ def vacosta_info():
 def vacosta_listarl():
     return compani84.listl()
 
-@app.route(rout84+"list/<int:id>")
+@app.route(rout84+"list/<string:id>")
 def vacosta_listar_id(id):
     return compani84.listlid(id)
 
@@ -2801,11 +2803,11 @@ def vacosta_listar_cre1():
 def vacosta_listar_cre2():
     return compani84.create2l()
 
-@app.route(rout84+"edit1/<id>")
+@app.route(rout84+"edit1/<string:id>")
 def vacosta_edit1(id):
     return compani84.edit1(id)
 
-@app.route(rout84+"editl/<id>", methods=["POST"])
+@app.route(rout84+"editl/<string:id>", methods=["POST"])
 def vacosta_editl(id):
     return compani84.editl(id)
 
@@ -2822,7 +2824,7 @@ def vigsegl_info():
 def vigsegl_listarl():
     return compani85.listl()
 
-@app.route(rout85+"list/<int:id>")
+@app.route(rout85+"list/<string:id>")
 def vigsegl_listar_id(id):
     return compani85.listlid(id)
 
@@ -2834,11 +2836,11 @@ def vigsegl_listar_cre1():
 def vigsegl_listar_cre2():
     return compani85.create2l()
 
-@app.route(rout85+"edit1/<id>")
+@app.route(rout85+"edit1/<string:id>")
 def vigsegl_edit1(id):
     return compani85.edit1(id)
 
-@app.route(rout85+"editl/<id>", methods=["POST"])
+@app.route(rout85+"editl/<string:id>", methods=["POST"])
 def vigsegl_editl(id):
     return compani85.editl(id)
 
@@ -2855,7 +2857,7 @@ def vigonsa_info():
 def vigonsa_listarl():
     return compani86.listl()
 
-@app.route(rout86+"list/<int:id>")
+@app.route(rout86+"list/<string:id>")
 def vigonsa_listar_id(id):
     return compani86.listlid(id)
 
@@ -2867,11 +2869,11 @@ def vigonsa_listar_cre1():
 def vigonsa_listar_cre2():
     return compani86.create2l()
 
-@app.route(rout86+"edit1/<id>")
+@app.route(rout86+"edit1/<string:id>")
 def vigonsa_edit1(id):
     return compani86.edit1(id)
 
-@app.route(rout86+"editl/<id>", methods=["POST"])
+@app.route(rout86+"editl/<string:id>", methods=["POST"])
 def vigonsa_editl(id):
     return compani86.editl(id)
 
@@ -2888,7 +2890,7 @@ def vise_info():
 def vise_listarl():
     return compani87.listl()
 
-@app.route(rout87+"list/<int:id>")
+@app.route(rout87+"list/<string:id>")
 def vise_listar_id(id):
     return compani87.listlid(id)
 
@@ -2900,11 +2902,11 @@ def vise_listar_cre1():
 def vise_listar_cre2():
     return compani87.create2l()
 
-@app.route(rout87+"edit1/<id>")
+@app.route(rout87+"edit1/<string:id>")
 def vise_edit1(id):
     return compani87.edit1(id)
 
-@app.route(rout87+"editl/<id>", methods=["POST"])
+@app.route(rout87+"editl/<string:id>", methods=["POST"])
 def vise_editl(id):
     return compani87.editl(id)
 
@@ -2922,7 +2924,7 @@ def embri_info():
 def embri_listarl():
     return compani88.listl()
 
-@app.route(rout88+"list/<int:id>")
+@app.route(rout88+"list/<string:id>")
 def embri_listar_id(id):
     return compani88.listlid(id)
 
@@ -2934,11 +2936,11 @@ def embri_listar_cre1():
 def embri_listar_cre2():
     return compani88.create2l()
 
-@app.route(rout88+"edit1/<id>")
+@app.route(rout88+"edit1/<string:id>")
 def embri_edit1(id):
     return compani88.edit1(id)
 
-@app.route(rout88+"editl/<id>", methods=["POST"])
+@app.route(rout88+"editl/<string:id>", methods=["POST"])
 def embri_editl(id):
     return compani88.editl(id)
 
